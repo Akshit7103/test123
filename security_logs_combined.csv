@@ -1,0 +1,746 @@
+ID,Timestamp,Source,Event Type,User,Snapshot
+1,2026-04-10 09:19:13,Ahmedabad Office,entry,A10,
+2,2026-04-10 10:43:53,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 295) - 10m 4s,/static/snapshots/unauth_295_1775798033.jpg
+3,2026-04-10 10:44:13,Ahmedabad Office,exit,A10,
+4,2026-04-10 11:00:24,Bangalore Office - Dahua Ch8,entry,B7,
+5,2026-04-10 11:09:36,Ahmedabad Office,entry,A6,
+6,2026-04-10 11:16:11,Bangalore Office - Dahua Ch8,entry,B6,
+7,2026-04-10 11:27:22,Bangalore Office - Dahua Ch8,entry,B5,
+8,2026-04-10 11:38:43,Ahmedabad Office,unauthorized,Unknown (ID: 225) - 38s,/static/snapshots/unauth_225_1775801323.jpg
+9,2026-04-10 11:48:39,Ahmedabad Office,entry,A2,
+10,2026-04-10 11:51:36,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 156) - 1m 30s,/static/snapshots/unauth_156_1775802096.jpg
+11,2026-04-10 12:11:49,Ahmedabad Office,unauthorized,Unknown (ID: 70) - 10m 59s,/static/snapshots/unauth_70_1775803309.jpg
+12,2026-04-10 12:20:13,Bangalore Office - Dahua Ch8,entry,B3,
+13,2026-04-10 12:28:39,Ahmedabad Office,exit,A2,
+14,2026-04-10 12:38:06,Ahmedabad Office,unauthorized,Unknown (ID: 172) - 4m 54s,/static/snapshots/unauth_172_1775804886.jpg
+15,2026-04-10 12:40:50,Ahmedabad Office,entry,A2,
+16,2026-04-10 13:04:55,Ahmedabad Office,entry,A7,
+17,2026-04-10 13:20:16,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 166) - 2m 1s,/static/snapshots/unauth_166_1775807416.jpg
+18,2026-04-10 13:21:51,Bangalore Office - Dahua Ch8,entry,B2,
+19,2026-04-10 13:30:24,Bangalore Office - Dahua Ch8,exit,B7,
+20,2026-04-10 13:36:06,Bangalore Office - Dahua Ch8,entry,B2,
+21,2026-04-10 14:22:22,Bangalore Office - Dahua Ch8,exit,B5,
+22,2026-04-10 14:28:06,Bangalore Office - Dahua Ch8,exit,B2,
+23,2026-04-10 14:31:51,Bangalore Office - Dahua Ch8,exit,B2,
+24,2026-04-10 15:15:40,Ahmedabad Office,entry,A9,
+25,2026-04-10 15:16:41,Ahmedabad Office,unauthorized,Unknown (ID: 398) - 9m 55s,/static/snapshots/unauth_398_1775814401.jpg
+26,2026-04-10 15:36:15,Ahmedabad Office,entry,A9,
+27,2026-04-10 15:46:08,Ahmedabad Office,entry,A8,
+28,2026-04-10 15:47:06,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 391) - 3m 35s,/static/snapshots/unauth_391_1775816226.jpg
+29,2026-04-10 15:59:55,Ahmedabad Office,exit,A7,
+30,2026-04-10 16:00:33,Bangalore Office - Dahua Ch8,entry,B5,
+31,2026-04-10 16:11:30,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 266) - 11m 10s,/static/snapshots/unauth_266_1775817690.jpg
+32,2026-04-10 16:12:18,Ahmedabad Office,entry,A5,
+33,2026-04-10 16:15:14,Bangalore Office - Dahua Ch8,entry,B2,
+34,2026-04-10 16:26:55,Ahmedabad Office,entry,A8,
+35,2026-04-10 16:27:13,Bangalore Office - Dahua Ch8,exit,B3,
+36,2026-04-10 16:28:11,Bangalore Office - Dahua Ch8,exit,B6,
+37,2026-04-10 16:47:08,Ahmedabad Office,exit,A8,
+38,2026-04-10 16:50:18,Ahmedabad Office,unauthorized,Unknown (ID: 291) - 11m 33s,/static/snapshots/unauth_291_1775820018.jpg
+39,2026-04-10 16:58:55,Ahmedabad Office,entry,A10,
+40,2026-04-10 17:00:36,Ahmedabad Office,exit,A6,
+41,2026-04-10 17:04:15,Ahmedabad Office,exit,A9,
+42,2026-04-10 17:14:12,Bangalore Office - Dahua Ch8,entry,B7,
+43,2026-04-10 17:41:14,Bangalore Office - Dahua Ch8,exit,B2,
+44,2026-04-10 17:47:20,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 310) - 4m 19s,/static/snapshots/unauth_310_1775823440.jpg
+45,2026-04-10 17:52:31,Bangalore Office - Dahua Ch8,entry,B6,
+46,2026-04-10 17:56:02,Ahmedabad Office,entry,A4,
+47,2026-04-10 17:57:40,Ahmedabad Office,exit,A9,
+48,2026-04-10 18:05:41,Ahmedabad Office,unauthorized,Unknown (ID: 294) - 4m 0s,/static/snapshots/unauth_294_1775824541.jpg
+49,2026-04-10 18:05:54,Bangalore Office - Dahua Ch8,entry,B3,
+50,2026-04-10 18:13:50,Ahmedabad Office,exit,A2,
+51,2026-04-10 19:01:31,Bangalore Office - Dahua Ch8,exit,B6,
+52,2026-04-10 19:29:18,Ahmedabad Office,exit,A5,
+53,2026-04-10 19:43:52,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 138) - 9m 53s,/static/snapshots/unauth_138_1775830432.jpg
+54,2026-04-10 19:55:54,Bangalore Office - Dahua Ch8,exit,B3,
+55,2026-04-10 20:50:33,Bangalore Office - Dahua Ch8,exit,B5,
+56,2026-04-10 20:52:02,Ahmedabad Office,exit,A4,
+57,2026-04-10 21:24:12,Bangalore Office - Dahua Ch8,exit,B7,
+58,2026-04-10 22:16:55,Ahmedabad Office,exit,A8,
+59,2026-04-10 22:50:55,Ahmedabad Office,exit,A10,
+60,2026-04-11 10:35:57,Ahmedabad Office,unauthorized,Unknown (ID: 259) - 3m 30s,/static/snapshots/unauth_259_1775883957.jpg
+61,2026-04-11 10:40:38,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 123) - 2m 45s,/static/snapshots/unauth_123_1775884238.jpg
+62,2026-04-11 10:41:49,Ahmedabad Office,unauthorized,Unknown (ID: 296) - 4m 34s,/static/snapshots/unauth_296_1775884309.jpg
+63,2026-04-11 10:42:26,Ahmedabad Office,phone_detected,Unknown,
+64,2026-04-11 10:50:19,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 305) - 9m 45s,/static/snapshots/unauth_305_1775884819.jpg
+65,2026-04-11 10:56:34,Ahmedabad Office,entry,A8,
+66,2026-04-11 10:56:44,Bangalore Office - Dahua Ch8,entry,B1,
+67,2026-04-11 11:40:01,Ahmedabad Office,entry,A7,
+68,2026-04-11 11:57:31,Ahmedabad Office,entry,A8,
+69,2026-04-11 12:04:21,Bangalore Office - Dahua Ch8,entry,B8,
+70,2026-04-11 12:09:04,Ahmedabad Office,entry,A2,
+71,2026-04-11 12:10:29,Bangalore Office - Dahua Ch8,entry,B6,
+72,2026-04-11 12:15:09,Ahmedabad Office,unauthorized,Unknown (ID: 50) - 54s,/static/snapshots/unauth_50_1775889909.jpg
+73,2026-04-11 12:20:34,Ahmedabad Office,exit,A8,
+74,2026-04-11 12:26:29,Bangalore Office - Dahua Ch8,exit,B6,
+75,2026-04-11 12:27:44,Bangalore Office - Dahua Ch8,exit,B1,
+76,2026-04-11 12:29:21,Bangalore Office - Dahua Ch8,exit,B8,
+77,2026-04-11 12:41:01,Ahmedabad Office,exit,A7,
+78,2026-04-11 12:42:40,Bangalore Office - Dahua Ch8,entry,B3,
+79,2026-04-11 12:50:54,Ahmedabad Office,entry,A3,
+80,2026-04-11 13:06:48,Ahmedabad Office,entry,A4,
+81,2026-04-11 13:07:41,Bangalore Office - Dahua Ch8,phone_detected,Unknown,
+82,2026-04-11 13:16:21,Ahmedabad Office,entry,A3,
+83,2026-04-11 13:20:10,Ahmedabad Office,entry,A5,
+84,2026-04-11 13:28:04,Ahmedabad Office,exit,A2,
+85,2026-04-11 13:43:33,Ahmedabad Office,unauthorized,Unknown (ID: 177) - 2m 14s,/static/snapshots/unauth_177_1775895213.jpg
+86,2026-04-11 13:47:34,Bangalore Office - Dahua Ch8,entry,B5,
+87,2026-04-11 13:55:42,Ahmedabad Office,entry,A6,
+88,2026-04-11 14:28:34,Bangalore Office - Dahua Ch8,exit,B5,
+89,2026-04-11 15:08:55,Bangalore Office - Dahua Ch8,entry,B1,
+90,2026-04-11 15:18:23,Ahmedabad Office,unauthorized,Unknown (ID: 315) - 3m 49s,/static/snapshots/unauth_315_1775900903.jpg
+91,2026-04-11 15:32:24,Ahmedabad Office,entry,A2,
+92,2026-04-11 16:08:00,Ahmedabad Office,unauthorized,Unknown (ID: 282) - 2m 44s,/static/snapshots/unauth_282_1775903880.jpg
+93,2026-04-11 16:19:32,Bangalore Office - Dahua Ch8,entry,B6,
+94,2026-04-11 16:27:32,Ahmedabad Office,entry,A9,
+95,2026-04-11 16:29:02,Ahmedabad Office,entry,A3,
+96,2026-04-11 16:34:48,Bangalore Office - Dahua Ch8,entry,B1,
+97,2026-04-11 16:37:54,Ahmedabad Office,exit,A3,
+98,2026-04-11 16:45:37,Ahmedabad Office,unauthorized,Unknown (ID: 251) - 1m 36s,/static/snapshots/unauth_251_1775906137.jpg
+99,2026-04-11 16:48:44,Bangalore Office - Dahua Ch8,entry,B6,
+100,2026-04-11 17:05:27,Ahmedabad Office,entry,A2,
+101,2026-04-11 17:07:54,Ahmedabad Office,entry,A7,
+102,2026-04-11 17:17:31,Ahmedabad Office,exit,A8,
+103,2026-04-11 17:25:31,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 38) - 9m 53s,/static/snapshots/unauth_38_1775908531.jpg
+104,2026-04-11 17:28:06,Ahmedabad Office,entry,A6,
+105,2026-04-11 17:46:42,Ahmedabad Office,exit,A6,
+106,2026-04-11 17:48:15,Bangalore Office - Dahua Ch8,entry,B6,
+107,2026-04-11 17:54:43,Ahmedabad Office,entry,A7,
+108,2026-04-11 18:08:16,Bangalore Office - Dahua Ch8,entry,B5,
+109,2026-04-11 18:09:27,Ahmedabad Office,exit,A2,
+110,2026-04-11 18:14:40,Bangalore Office - Dahua Ch8,exit,B3,
+111,2026-04-11 18:37:44,Bangalore Office - Dahua Ch8,exit,B6,
+112,2026-04-11 18:41:02,Ahmedabad Office,entry,A3,
+113,2026-04-11 18:45:48,Ahmedabad Office,exit,A4,
+114,2026-04-11 18:50:21,Ahmedabad Office,exit,A3,
+115,2026-04-11 18:51:10,Ahmedabad Office,exit,A5,
+116,2026-04-11 19:05:48,Bangalore Office - Dahua Ch8,exit,B1,
+117,2026-04-11 19:12:32,Bangalore Office - Dahua Ch8,exit,B6,
+118,2026-04-11 19:14:02,Ahmedabad Office,exit,A3,
+119,2026-04-11 19:19:55,Bangalore Office - Dahua Ch8,exit,B1,
+120,2026-04-11 19:22:16,Bangalore Office - Dahua Ch8,exit,B5,
+121,2026-04-11 19:43:24,Ahmedabad Office,exit,A2,
+122,2026-04-11 19:47:32,Ahmedabad Office,exit,A9,
+123,2026-04-11 21:34:02,Ahmedabad Office,exit,A3,
+124,2026-04-11 22:12:06,Ahmedabad Office,exit,A6,
+125,2026-04-11 22:42:43,Ahmedabad Office,exit,A7,
+126,2026-04-11 22:57:54,Ahmedabad Office,exit,A7,
+127,2026-04-11 23:47:15,Bangalore Office - Dahua Ch8,exit,B6,
+128,2026-04-13 09:50:50,Ahmedabad Office,entry,A1,
+129,2026-04-13 10:34:21,Ahmedabad Office,entry,A6,
+130,2026-04-13 10:49:41,Ahmedabad Office,unauthorized,Unknown (ID: 188) - 6m 13s,/static/snapshots/unauth_188_1776057581.jpg
+131,2026-04-13 10:55:24,Ahmedabad Office,entry,A3,
+132,2026-04-13 10:58:53,Ahmedabad Office,entry,A3,
+133,2026-04-13 11:13:03,Bangalore Office - Dahua Ch8,entry,B8,
+134,2026-04-13 11:53:44,Ahmedabad Office,entry,A7,
+135,2026-04-13 12:03:35,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 150) - 2m 12s,/static/snapshots/unauth_150_1776062015.jpg
+136,2026-04-13 12:06:50,Ahmedabad Office,exit,A1,
+137,2026-04-13 12:09:16,Ahmedabad Office,entry,A6,
+138,2026-04-13 12:10:20,Ahmedabad Office,unauthorized,Unknown (ID: 364) - 3m 53s,/static/snapshots/unauth_364_1776062420.jpg
+139,2026-04-13 12:15:47,Bangalore Office - Dahua Ch8,entry,B8,
+140,2026-04-13 12:26:36,Ahmedabad Office,entry,A7,
+141,2026-04-13 12:48:19,Ahmedabad Office,entry,A1,
+142,2026-04-13 13:30:28,Ahmedabad Office,entry,A6,
+143,2026-04-13 13:45:14,Ahmedabad Office,entry,A3,
+144,2026-04-13 13:58:38,Ahmedabad Office,entry,A9,
+145,2026-04-13 14:05:16,Ahmedabad Office,exit,A6,
+146,2026-04-13 14:05:48,Bangalore Office - Dahua Ch8,entry,B4,
+147,2026-04-13 14:07:36,Bangalore Office - Dahua Ch8,entry,B4,
+148,2026-04-13 14:13:36,Ahmedabad Office,exit,A7,
+149,2026-04-13 14:35:20,Ahmedabad Office,unauthorized,Unknown (ID: 340) - 8m 12s,/static/snapshots/unauth_340_1776071120.jpg
+150,2026-04-13 14:44:48,Bangalore Office - Dahua Ch8,exit,B4,
+151,2026-04-13 14:45:18,Bangalore Office - Dahua Ch8,phone_detected,Unknown,
+152,2026-04-13 14:59:15,Ahmedabad Office,unauthorized,Unknown (ID: 4) - 4m 30s,/static/snapshots/unauth_4_1776072555.jpg
+153,2026-04-13 15:14:53,Ahmedabad Office,exit,A3,
+154,2026-04-13 15:37:35,Ahmedabad Office,entry,A6,
+155,2026-04-13 15:50:43,Bangalore Office - Dahua Ch8,entry,B2,
+156,2026-04-13 15:51:11,Ahmedabad Office,entry,A3,
+157,2026-04-13 15:56:19,Ahmedabad Office,exit,A1,
+158,2026-04-13 16:05:33,Ahmedabad Office,entry,A7,
+159,2026-04-13 16:13:36,Bangalore Office - Dahua Ch8,exit,B4,
+160,2026-04-13 16:18:21,Ahmedabad Office,exit,A6,
+161,2026-04-13 16:19:29,Bangalore Office - Dahua Ch8,entry,B7,
+162,2026-04-13 16:21:17,Bangalore Office - Dahua Ch8,entry,B1,
+163,2026-04-13 16:24:03,Bangalore Office - Dahua Ch8,exit,B8,
+164,2026-04-13 16:27:24,Ahmedabad Office,exit,A3,
+165,2026-04-13 16:30:28,Bangalore Office - Dahua Ch8,entry,B8,
+166,2026-04-13 16:35:45,Bangalore Office - Dahua Ch8,entry,B5,
+167,2026-04-13 16:41:16,Ahmedabad Office,unauthorized,Unknown (ID: 368) - 3m 13s,/static/snapshots/unauth_368_1776078676.jpg
+168,2026-04-13 16:41:17,Bangalore Office - Dahua Ch8,entry,B7,
+169,2026-04-13 16:59:44,Ahmedabad Office,unauthorized,Unknown (ID: 327) - 3m 1s,/static/snapshots/unauth_327_1776079784.jpg
+170,2026-04-13 17:01:11,Bangalore Office - Dahua Ch8,entry,B3,
+171,2026-04-13 17:02:11,Ahmedabad Office,exit,A3,
+172,2026-04-13 17:03:41,Ahmedabad Office,entry,A10,
+173,2026-04-13 17:05:58,Ahmedabad Office,entry,A9,
+174,2026-04-13 17:17:47,Bangalore Office - Dahua Ch8,exit,B8,
+175,2026-04-13 17:27:44,Ahmedabad Office,exit,A7,
+176,2026-04-13 17:38:00,Ahmedabad Office,entry,A6,
+177,2026-04-13 17:55:17,Bangalore Office - Dahua Ch8,exit,B1,
+178,2026-04-13 17:59:36,Ahmedabad Office,unauthorized,Unknown (ID: 370) - 5m 23s,/static/snapshots/unauth_370_1776083376.jpg
+179,2026-04-13 18:06:37,Bangalore Office - Dahua Ch8,entry,B2,
+180,2026-04-13 18:16:14,Ahmedabad Office,exit,A3,
+181,2026-04-13 18:28:06,Ahmedabad Office,entry,A9,
+182,2026-04-13 18:33:38,Ahmedabad Office,exit,A9,
+183,2026-04-13 18:34:37,Bangalore Office - Dahua Ch8,exit,B2,
+184,2026-04-13 18:57:28,Bangalore Office - Dahua Ch8,exit,B8,
+185,2026-04-13 19:08:28,Ahmedabad Office,exit,A6,
+186,2026-04-13 19:13:58,Ahmedabad Office,exit,A9,
+187,2026-04-13 19:15:29,Bangalore Office - Dahua Ch8,exit,B7,
+188,2026-04-13 19:24:33,Ahmedabad Office,exit,A7,
+189,2026-04-13 19:25:23,Ahmedabad Office,unauthorized,Unknown (ID: 174) - 9m 34s,/static/snapshots/unauth_174_1776088523.jpg
+190,2026-04-13 19:34:01,Bangalore Office - Dahua Ch8,entry,B8,
+191,2026-04-13 19:41:43,Bangalore Office - Dahua Ch8,exit,B2,
+192,2026-04-13 20:06:11,Bangalore Office - Dahua Ch8,exit,B3,
+193,2026-04-13 20:14:00,Ahmedabad Office,exit,A6,
+194,2026-04-13 20:28:45,Bangalore Office - Dahua Ch8,exit,B5,
+195,2026-04-13 20:39:35,Ahmedabad Office,exit,A6,
+196,2026-04-13 21:24:41,Ahmedabad Office,exit,A10,
+197,2026-04-13 21:38:06,Ahmedabad Office,exit,A9,
+198,2026-04-13 22:11:17,Bangalore Office - Dahua Ch8,exit,B7,
+199,2026-04-13 23:10:01,Bangalore Office - Dahua Ch8,exit,B8,
+200,2026-04-15 10:02:55,Bangalore Office - Dahua Ch8,entry,B1,
+201,2026-04-15 10:07:29,Ahmedabad Office,unauthorized,Unknown (ID: 158) - 2m 46s,/static/snapshots/unauth_158_1776227849.jpg
+202,2026-04-15 10:26:21,Ahmedabad Office,unauthorized,Unknown (ID: 368) - 8m 6s,/static/snapshots/unauth_368_1776228981.jpg
+203,2026-04-15 10:42:27,Bangalore Office - Dahua Ch8,entry,B7,
+204,2026-04-15 10:44:07,Ahmedabad Office,unauthorized,Unknown (ID: 98) - 22s,/static/snapshots/unauth_98_1776230047.jpg
+205,2026-04-15 10:56:36,Bangalore Office - Dahua Ch8,entry,B5,
+206,2026-04-15 11:01:39,Bangalore Office - Dahua Ch8,entry,B1,
+207,2026-04-15 11:28:08,Bangalore Office - Dahua Ch8,entry,B4,
+208,2026-04-15 11:30:14,Ahmedabad Office,entry,A9,
+209,2026-04-15 11:31:30,Bangalore Office - Dahua Ch8,entry,B2,
+210,2026-04-15 11:44:00,Bangalore Office - Dahua Ch8,entry,B7,
+211,2026-04-15 11:44:33,Bangalore Office - Dahua Ch8,entry,B7,
+212,2026-04-15 11:48:26,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 311) - 10m 13s,/static/snapshots/unauth_311_1776233906.jpg
+213,2026-04-15 11:51:36,Bangalore Office - Dahua Ch8,exit,B5,
+214,2026-04-15 11:54:04,Ahmedabad Office,unauthorized,Unknown (ID: 232) - 2m 59s,/static/snapshots/unauth_232_1776234244.jpg
+215,2026-04-15 11:54:40,Ahmedabad Office,unauthorized,Unknown (ID: 208) - 7m 20s,/static/snapshots/unauth_208_1776234280.jpg
+216,2026-04-15 12:05:10,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 123) - 3m 0s,/static/snapshots/unauth_123_1776234910.jpg
+217,2026-04-15 12:10:04,Ahmedabad Office,entry,A6,
+218,2026-04-15 12:22:03,Ahmedabad Office,unauthorized,Unknown (ID: 26) - 4m 51s,/static/snapshots/unauth_26_1776235923.jpg
+219,2026-04-15 12:22:09,Ahmedabad Office,phone_detected,Unknown,
+220,2026-04-15 12:30:17,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 371) - 10m 6s,/static/snapshots/unauth_371_1776236417.jpg
+221,2026-04-15 12:34:39,Bangalore Office - Dahua Ch8,exit,B1,
+222,2026-04-15 12:37:23,Bangalore Office - Dahua Ch8,entry,B7,
+223,2026-04-15 12:38:01,Bangalore Office - Dahua Ch8,entry,B2,
+224,2026-04-15 12:40:14,Ahmedabad Office,exit,A9,
+225,2026-04-15 12:42:57,Ahmedabad Office,unauthorized,Unknown (ID: 272) - 3m 54s,/static/snapshots/unauth_272_1776237177.jpg
+226,2026-04-15 12:50:44,Bangalore Office - Dahua Ch8,entry,B7,
+227,2026-04-15 12:53:00,Bangalore Office - Dahua Ch8,exit,B7,
+228,2026-04-15 13:06:55,Bangalore Office - Dahua Ch8,exit,B1,
+229,2026-04-15 13:09:45,Bangalore Office - Dahua Ch8,entry,B3,
+230,2026-04-15 13:17:55,Bangalore Office - Dahua Ch8,entry,B1,
+231,2026-04-15 13:19:00,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 363) - 9m 9s,/static/snapshots/unauth_363_1776239340.jpg
+232,2026-04-15 13:29:21,Ahmedabad Office,entry,A9,
+233,2026-04-15 13:35:30,Bangalore Office - Dahua Ch8,exit,B2,
+234,2026-04-15 13:56:14,Ahmedabad Office,entry,A9,
+235,2026-04-15 13:58:27,Bangalore Office - Dahua Ch8,exit,B7,
+236,2026-04-15 14:00:44,Bangalore Office - Dahua Ch8,exit,B7,
+237,2026-04-15 14:07:55,Bangalore Office - Dahua Ch8,exit,B1,
+238,2026-04-15 15:04:21,Ahmedabad Office,exit,A9,
+239,2026-04-15 15:13:45,Bangalore Office - Dahua Ch8,exit,B3,
+240,2026-04-15 15:19:08,Bangalore Office - Dahua Ch8,exit,B4,
+241,2026-04-15 15:38:01,Ahmedabad Office,entry,A2,
+242,2026-04-15 15:56:33,Bangalore Office - Dahua Ch8,exit,B7,
+243,2026-04-15 16:18:01,Ahmedabad Office,exit,A2,
+244,2026-04-15 16:18:20,Ahmedabad Office,unauthorized,Unknown (ID: 147) - 11m 4s,/static/snapshots/unauth_147_1776250100.jpg
+245,2026-04-15 16:20:15,Bangalore Office - Dahua Ch8,entry,B5,
+246,2026-04-15 16:25:56,Bangalore Office - Dahua Ch8,entry,B6,
+247,2026-04-15 16:26:39,Ahmedabad Office,unauthorized,Unknown (ID: 328) - 34s,/static/snapshots/unauth_328_1776250599.jpg
+248,2026-04-15 16:31:32,Ahmedabad Office,unauthorized,Unknown (ID: 240) - 8m 33s,/static/snapshots/unauth_240_1776250892.jpg
+249,2026-04-15 16:40:06,Ahmedabad Office,entry,A6,
+250,2026-04-15 16:40:52,Ahmedabad Office,entry,A10,
+251,2026-04-15 16:42:06,Bangalore Office - Dahua Ch8,entry,B6,
+252,2026-04-15 16:43:48,Ahmedabad Office,unauthorized,Unknown (ID: 306) - 1m 26s,/static/snapshots/unauth_306_1776251628.jpg
+253,2026-04-15 16:46:04,Ahmedabad Office,exit,A6,
+254,2026-04-15 16:49:41,Bangalore Office - Dahua Ch8,entry,B6,
+255,2026-04-15 16:54:16,Bangalore Office - Dahua Ch8,entry,B6,
+256,2026-04-15 16:54:23,Bangalore Office - Dahua Ch8,exit,B7,
+257,2026-04-15 17:05:17,Bangalore Office - Dahua Ch8,entry,B6,
+258,2026-04-15 17:09:01,Bangalore Office - Dahua Ch8,entry,B5,
+259,2026-04-15 17:24:41,Bangalore Office - Dahua Ch8,exit,B6,
+260,2026-04-15 17:24:57,Bangalore Office - Dahua Ch8,entry,B1,
+261,2026-04-15 17:40:01,Bangalore Office - Dahua Ch8,exit,B2,
+262,2026-04-15 17:42:14,Ahmedabad Office,exit,A9,
+263,2026-04-15 17:47:01,Bangalore Office - Dahua Ch8,exit,B5,
+264,2026-04-15 17:48:01,Ahmedabad Office,unauthorized,Unknown (ID: 153) - 7m 57s,/static/snapshots/unauth_153_1776255481.jpg
+265,2026-04-15 18:30:09,Ahmedabad Office,unauthorized,Unknown (ID: 233) - 10m 23s,/static/snapshots/unauth_233_1776258009.jpg
+266,2026-04-15 18:48:46,Bangalore Office - Dahua Ch8,entry,B7,
+267,2026-04-15 18:50:15,Bangalore Office - Dahua Ch8,exit,B5,
+268,2026-04-15 19:09:04,Ahmedabad Office,entry,A4,
+269,2026-04-15 19:50:36,Ahmedabad Office,entry,A6,
+270,2026-04-15 19:58:06,Bangalore Office - Dahua Ch8,exit,B6,
+271,2026-04-15 20:45:46,Bangalore Office - Dahua Ch8,exit,B7,
+272,2026-04-15 20:52:52,Ahmedabad Office,exit,A10,
+273,2026-04-15 21:10:17,Bangalore Office - Dahua Ch8,exit,B6,
+274,2026-04-15 21:27:16,Bangalore Office - Dahua Ch8,exit,B6,
+275,2026-04-15 21:50:36,Ahmedabad Office,exit,A6,
+276,2026-04-15 21:52:06,Ahmedabad Office,exit,A6,
+277,2026-04-15 21:55:04,Ahmedabad Office,exit,A4,
+278,2026-04-15 22:09:56,Bangalore Office - Dahua Ch8,exit,B6,
+279,2026-04-15 22:38:57,Bangalore Office - Dahua Ch8,exit,B1,
+280,2026-04-16 09:55:43,Ahmedabad Office,entry,A7,
+281,2026-04-16 10:10:17,Ahmedabad Office,entry,A2,
+282,2026-04-16 10:21:49,Bangalore Office - Dahua Ch8,entry,B7,
+283,2026-04-16 10:32:28,Ahmedabad Office,unauthorized,Unknown (ID: 392) - 9m 26s,/static/snapshots/unauth_392_1776315748.jpg
+284,2026-04-16 10:35:43,Ahmedabad Office,exit,A7,
+285,2026-04-16 11:07:54,Ahmedabad Office,entry,A7,
+286,2026-04-16 11:35:17,Ahmedabad Office,unauthorized,Unknown (ID: 65) - 10m 43s,/static/snapshots/unauth_65_1776319517.jpg
+287,2026-04-16 11:42:49,Bangalore Office - Dahua Ch8,exit,B7,
+288,2026-04-16 11:43:34,Ahmedabad Office,unauthorized,Unknown (ID: 195) - 6m 47s,/static/snapshots/unauth_195_1776320014.jpg
+289,2026-04-16 11:56:46,Ahmedabad Office,phone_detected,Unknown,
+290,2026-04-16 12:00:31,Ahmedabad Office,entry,A5,
+291,2026-04-16 12:05:20,Ahmedabad Office,entry,A9,
+292,2026-04-16 12:07:01,Ahmedabad Office,unauthorized,Unknown (ID: 377) - 3m 13s,/static/snapshots/unauth_377_1776321421.jpg
+293,2026-04-16 12:09:35,Ahmedabad Office,entry,A1,
+294,2026-04-16 12:14:07,Bangalore Office - Dahua Ch8,entry,B8,
+295,2026-04-16 12:19:49,Ahmedabad Office,unauthorized,Unknown (ID: 148) - 3m 35s,/static/snapshots/unauth_148_1776322189.jpg
+296,2026-04-16 12:56:38,Bangalore Office - Dahua Ch8,entry,B6,
+297,2026-04-16 13:01:03,Ahmedabad Office,entry,A9,
+298,2026-04-16 13:27:31,Ahmedabad Office,entry,A2,
+299,2026-04-16 13:29:44,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 156) - 6m 55s,/static/snapshots/unauth_156_1776326384.jpg
+300,2026-04-16 13:45:18,Bangalore Office - Dahua Ch8,entry,B4,
+301,2026-04-16 13:45:27,Ahmedabad Office,entry,A5,
+302,2026-04-16 13:46:50,Bangalore Office - Dahua Ch8,entry,B8,
+303,2026-04-16 13:53:23,Bangalore Office - Dahua Ch8,entry,B7,
+304,2026-04-16 13:55:59,Bangalore Office - Dahua Ch8,entry,B3,
+305,2026-04-16 13:59:50,Bangalore Office - Dahua Ch8,entry,B1,
+306,2026-04-16 14:05:25,Ahmedabad Office,unauthorized,Unknown (ID: 259) - 7m 51s,/static/snapshots/unauth_259_1776328525.jpg
+307,2026-04-16 14:07:07,Bangalore Office - Dahua Ch8,exit,B8,
+308,2026-04-16 14:15:17,Ahmedabad Office,exit,A2,
+309,2026-04-16 14:31:28,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 42) - 10m 15s,/static/snapshots/unauth_42_1776330088.jpg
+310,2026-04-16 14:34:50,Bangalore Office - Dahua Ch8,exit,B1,
+311,2026-04-16 14:48:59,Bangalore Office - Dahua Ch8,exit,B3,
+312,2026-04-16 15:05:32,Ahmedabad Office,unauthorized,Unknown (ID: 329) - 2m 55s,/static/snapshots/unauth_329_1776332132.jpg
+313,2026-04-16 15:12:15,Ahmedabad Office,unauthorized,Unknown (ID: 143) - 9m 34s,/static/snapshots/unauth_143_1776332535.jpg
+314,2026-04-16 15:14:54,Ahmedabad Office,exit,A7,
+315,2026-04-16 15:22:06,Ahmedabad Office,entry,A1,
+316,2026-04-16 15:22:32,Ahmedabad Office,entry,A5,
+317,2026-04-16 15:25:27,Ahmedabad Office,exit,A5,
+318,2026-04-16 15:31:23,Bangalore Office - Dahua Ch8,exit,B7,
+319,2026-04-16 15:32:38,Bangalore Office - Dahua Ch8,exit,B6,
+320,2026-04-16 15:32:53,Ahmedabad Office,unauthorized,Unknown (ID: 261) - 9m 8s,/static/snapshots/unauth_261_1776333773.jpg
+321,2026-04-16 15:35:26,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 48) - 3m 53s,/static/snapshots/unauth_48_1776333926.jpg
+322,2026-04-16 15:54:06,Ahmedabad Office,unauthorized,Unknown (ID: 221) - 2m 20s,/static/snapshots/unauth_221_1776335046.jpg
+323,2026-04-16 15:55:31,Ahmedabad Office,exit,A5,
+324,2026-04-16 16:00:18,Bangalore Office - Dahua Ch8,exit,B4,
+325,2026-04-16 16:10:38,Bangalore Office - Dahua Ch8,entry,B8,
+326,2026-04-16 16:13:12,Ahmedabad Office,unauthorized,Unknown (ID: 276) - 4m 40s,/static/snapshots/unauth_276_1776336192.jpg
+327,2026-04-16 16:13:39,Ahmedabad Office,unauthorized,Unknown (ID: 147) - 8m 25s,/static/snapshots/unauth_147_1776336219.jpg
+328,2026-04-16 16:14:32,Ahmedabad Office,exit,A5,
+329,2026-04-16 16:22:50,Ahmedabad Office,entry,A6,
+330,2026-04-16 16:25:16,Ahmedabad Office,unauthorized,Unknown (ID: 2) - 3m 46s,/static/snapshots/unauth_2_1776336916.jpg
+331,2026-04-16 16:33:31,Bangalore Office - Dahua Ch8,entry,B4,
+332,2026-04-16 16:42:58,Ahmedabad Office,entry,A5,
+333,2026-04-16 16:48:25,Ahmedabad Office,unauthorized,Unknown (ID: 188) - 49s,/static/snapshots/unauth_188_1776338305.jpg
+334,2026-04-16 16:49:36,Ahmedabad Office,entry,A6,
+335,2026-04-16 17:11:50,Ahmedabad Office,exit,A6,
+336,2026-04-16 17:21:03,Ahmedabad Office,exit,A9,
+337,2026-04-16 17:27:19,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 292) - 10m 38s,/static/snapshots/unauth_292_1776340639.jpg
+338,2026-04-16 17:35:35,Ahmedabad Office,exit,A1,
+339,2026-04-16 17:39:43,Ahmedabad Office,unauthorized,Unknown (ID: 313) - 2m 4s,/static/snapshots/unauth_313_1776341383.jpg
+340,2026-04-16 17:55:14,Bangalore Office - Dahua Ch8,entry,B6,
+341,2026-04-16 17:58:20,Ahmedabad Office,exit,A9,
+342,2026-04-16 18:05:22,Ahmedabad Office,unauthorized,Unknown (ID: 227) - 11m 14s,/static/snapshots/unauth_227_1776342922.jpg
+343,2026-04-16 18:45:50,Bangalore Office - Dahua Ch8,exit,B8,
+344,2026-04-16 18:52:31,Ahmedabad Office,exit,A2,
+345,2026-04-16 18:54:03,Bangalore Office - Dahua Ch8,entry,B8,
+346,2026-04-16 18:55:39,Ahmedabad Office,unauthorized,Unknown (ID: 215) - 4m 17s,/static/snapshots/unauth_215_1776345939.jpg
+347,2026-04-16 19:54:14,Bangalore Office - Dahua Ch8,entry,B4,
+348,2026-04-16 19:56:03,Bangalore Office - Dahua Ch8,exit,B8,
+349,2026-04-16 20:04:14,Bangalore Office - Dahua Ch8,exit,B6,
+350,2026-04-16 20:32:06,Ahmedabad Office,exit,A1,
+351,2026-04-16 21:00:14,Bangalore Office - Dahua Ch8,exit,B4,
+352,2026-04-16 21:35:38,Bangalore Office - Dahua Ch8,exit,B8,
+353,2026-04-16 22:05:58,Ahmedabad Office,exit,A5,
+354,2026-04-16 22:08:31,Bangalore Office - Dahua Ch8,exit,B4,
+355,2026-04-16 22:09:36,Ahmedabad Office,exit,A6,
+356,2026-04-28 09:16:03,Ahmedabad Office,entry,A10,
+357,2026-04-28 10:06:35,Ahmedabad Office,entry,A1,
+358,2026-04-28 10:35:03,Ahmedabad Office,exit,A10,
+359,2026-04-28 10:37:30,Bangalore Office - Dahua Ch8,entry,B1,
+360,2026-04-28 10:42:09,Ahmedabad Office,entry,A3,
+361,2026-04-28 10:54:06,Ahmedabad Office,entry,A8,
+362,2026-04-28 10:55:47,Ahmedabad Office,entry,A9,
+363,2026-04-28 11:17:44,Bangalore Office - Dahua Ch8,entry,B6,
+364,2026-04-28 11:24:06,Bangalore Office - Dahua Ch8,entry,B4,
+365,2026-04-28 11:31:47,Ahmedabad Office,exit,A9,
+366,2026-04-28 11:34:25,Ahmedabad Office,unauthorized,Unknown (ID: 271) - 2m 13s,/static/snapshots/unauth_271_1777356265.jpg
+367,2026-04-28 12:05:23,Ahmedabad Office,entry,A9,
+368,2026-04-28 12:12:39,Ahmedabad Office,entry,A10,
+369,2026-04-28 12:13:21,Ahmedabad Office,entry,A1,
+370,2026-04-28 12:28:53,Bangalore Office - Dahua Ch8,entry,B4,
+371,2026-04-28 12:34:05,Bangalore Office - Dahua Ch8,entry,B5,
+372,2026-04-28 12:51:23,Ahmedabad Office,entry,A1,
+373,2026-04-28 13:04:13,Bangalore Office - Dahua Ch8,entry,B1,
+374,2026-04-28 13:13:06,Ahmedabad Office,exit,A8,
+375,2026-04-28 13:18:35,Bangalore Office - Dahua Ch8,entry,B7,
+376,2026-04-28 13:35:58,Ahmedabad Office,unauthorized,Unknown (ID: 242) - 9m 13s,/static/snapshots/unauth_242_1777363558.jpg
+377,2026-04-28 13:38:35,Ahmedabad Office,exit,A1,
+378,2026-04-28 13:42:58,Bangalore Office - Dahua Ch8,entry,B4,
+379,2026-04-28 13:56:09,Ahmedabad Office,exit,A3,
+380,2026-04-28 13:59:05,Bangalore Office - Dahua Ch8,exit,B5,
+381,2026-04-28 14:06:20,Ahmedabad Office,unauthorized,Unknown (ID: 124) - 8m 0s,/static/snapshots/unauth_124_1777365380.jpg
+382,2026-04-28 14:07:12,Ahmedabad Office,unauthorized,Unknown (ID: 72) - 4m 5s,/static/snapshots/unauth_72_1777365432.jpg
+383,2026-04-28 14:14:23,Ahmedabad Office,exit,A9,
+384,2026-04-28 14:35:39,Ahmedabad Office,exit,A10,
+385,2026-04-28 14:38:35,Bangalore Office - Dahua Ch8,exit,B7,
+386,2026-04-28 14:42:06,Bangalore Office - Dahua Ch8,exit,B4,
+387,2026-04-28 15:09:27,Bangalore Office - Dahua Ch8,entry,B1,
+388,2026-04-28 15:09:30,Bangalore Office - Dahua Ch8,exit,B1,
+389,2026-04-28 15:25:43,Bangalore Office - Dahua Ch8,entry,B5,
+390,2026-04-28 15:41:22,Ahmedabad Office,entry,A2,
+391,2026-04-28 15:44:18,Ahmedabad Office,entry,A10,
+392,2026-04-28 15:53:29,Bangalore Office - Dahua Ch8,entry,B7,
+393,2026-04-28 15:56:48,Ahmedabad Office,entry,A7,
+394,2026-04-28 15:58:17,Ahmedabad Office,entry,A9,
+395,2026-04-28 16:10:18,Ahmedabad Office,exit,A10,
+396,2026-04-28 16:11:12,Ahmedabad Office,entry,A5,
+397,2026-04-28 16:12:38,Ahmedabad Office,unauthorized,Unknown (ID: 261) - 6m 54s,/static/snapshots/unauth_261_1777372958.jpg
+398,2026-04-28 16:23:09,Ahmedabad Office,entry,A7,
+399,2026-04-28 16:24:17,Bangalore Office - Dahua Ch8,entry,B6,
+400,2026-04-28 16:26:37,Ahmedabad Office,unauthorized,Unknown (ID: 158) - 10m 47s,/static/snapshots/unauth_158_1777373797.jpg
+401,2026-04-28 16:27:22,Ahmedabad Office,exit,A2,
+402,2026-04-28 16:29:27,Bangalore Office - Dahua Ch8,exit,B1,
+403,2026-04-28 16:35:34,Ahmedabad Office,unauthorized,Unknown (ID: 149) - 5m 10s,/static/snapshots/unauth_149_1777374334.jpg
+404,2026-04-28 16:36:21,Ahmedabad Office,exit,A1,
+405,2026-04-28 16:36:28,Ahmedabad Office,entry,A4,
+406,2026-04-28 16:46:58,Bangalore Office - Dahua Ch8,exit,B4,
+407,2026-04-28 16:49:23,Ahmedabad Office,exit,A1,
+408,2026-04-28 16:51:25,Bangalore Office - Dahua Ch8,entry,B7,
+409,2026-04-28 16:54:10,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 169) - 7m 4s,/static/snapshots/unauth_169_1777375450.jpg
+410,2026-04-28 16:55:22,Ahmedabad Office,unauthorized,Unknown (ID: 205) - 2m 16s,/static/snapshots/unauth_205_1777375522.jpg
+411,2026-04-28 17:03:44,Bangalore Office - Dahua Ch8,exit,B6,
+412,2026-04-28 17:18:22,Ahmedabad Office,entry,A1,
+413,2026-04-28 17:21:53,Bangalore Office - Dahua Ch8,exit,B4,
+414,2026-04-28 17:26:29,Bangalore Office - Dahua Ch8,exit,B7,
+415,2026-04-28 17:33:12,Ahmedabad Office,exit,A5,
+416,2026-04-28 17:37:17,Ahmedabad Office,exit,A9,
+417,2026-04-28 17:39:08,Ahmedabad Office,entry,A1,
+418,2026-04-28 17:49:03,Bangalore Office - Dahua Ch8,entry,B4,
+419,2026-04-28 18:09:13,Bangalore Office - Dahua Ch8,exit,B1,
+420,2026-04-28 18:20:10,Ahmedabad Office,unauthorized,Unknown (ID: 202) - 10m 34s,/static/snapshots/unauth_202_1777380610.jpg
+421,2026-04-28 18:26:03,Ahmedabad Office,entry,A8,
+422,2026-04-28 18:30:25,Bangalore Office - Dahua Ch8,exit,B7,
+423,2026-04-28 18:33:57,Ahmedabad Office,unauthorized,Unknown (ID: 146) - 1m 23s,/static/snapshots/unauth_146_1777381437.jpg
+424,2026-04-28 18:51:09,Ahmedabad Office,unauthorized,Unknown (ID: 149) - 46s,/static/snapshots/unauth_149_1777382469.jpg
+425,2026-04-28 18:53:45,Ahmedabad Office,entry,A1,
+426,2026-04-28 19:59:21,Ahmedabad Office,exit,A1,
+427,2026-04-28 20:01:03,Bangalore Office - Dahua Ch8,exit,B4,
+428,2026-04-28 20:14:17,Bangalore Office - Dahua Ch8,exit,B6,
+429,2026-04-28 20:14:43,Bangalore Office - Dahua Ch8,exit,B5,
+430,2026-04-28 20:20:48,Ahmedabad Office,exit,A7,
+431,2026-04-28 20:40:09,Ahmedabad Office,exit,A7,
+432,2026-04-28 20:44:22,Ahmedabad Office,exit,A1,
+433,2026-04-28 20:47:28,Ahmedabad Office,exit,A4,
+434,2026-04-28 22:03:03,Ahmedabad Office,exit,A8,
+435,2026-04-28 22:59:08,Ahmedabad Office,exit,A1,
+436,2026-04-29 09:22:15,Ahmedabad Office,entry,A5,
+437,2026-04-29 10:18:53,Bangalore Office - Dahua Ch8,entry,B2,
+438,2026-04-29 10:35:12,Ahmedabad Office,unauthorized,Unknown (ID: 186) - 9m 29s,/static/snapshots/unauth_186_1777439112.jpg
+439,2026-04-29 10:38:52,Ahmedabad Office,entry,A2,
+440,2026-04-29 10:42:55,Ahmedabad Office,unauthorized,Unknown (ID: 277) - 2m 19s,/static/snapshots/unauth_277_1777439575.jpg
+441,2026-04-29 11:02:02,Ahmedabad Office,entry,A5,
+442,2026-04-29 11:18:15,Ahmedabad Office,entry,A9,
+443,2026-04-29 11:43:43,Ahmedabad Office,entry,A6,
+444,2026-04-29 11:45:05,Ahmedabad Office,entry,A5,
+445,2026-04-29 12:25:52,Ahmedabad Office,exit,A2,
+446,2026-04-29 12:48:17,Ahmedabad Office,unauthorized,Unknown (ID: 169) - 5m 12s,/static/snapshots/unauth_169_1777447097.jpg
+447,2026-04-29 12:48:32,Ahmedabad Office,entry,A8,
+448,2026-04-29 12:49:26,Ahmedabad Office,entry,A10,
+449,2026-04-29 12:50:03,Ahmedabad Office,unauthorized,Unknown (ID: 39) - 11m 30s,/static/snapshots/unauth_39_1777447203.jpg
+450,2026-04-29 13:03:35,Ahmedabad Office,unauthorized,Unknown (ID: 237) - 11m 31s,/static/snapshots/unauth_237_1777448015.jpg
+451,2026-04-29 13:21:43,Ahmedabad Office,entry,A5,
+452,2026-04-29 13:26:26,Ahmedabad Office,exit,A10,
+453,2026-04-29 13:29:33,Bangalore Office - Dahua Ch8,entry,B2,
+454,2026-04-29 13:34:29,Bangalore Office - Dahua Ch8,entry,B2,
+455,2026-04-29 13:46:03,Bangalore Office - Dahua Ch8,entry,B7,
+456,2026-04-29 13:51:47,Ahmedabad Office,unauthorized,Unknown (ID: 348) - 2m 46s,/static/snapshots/unauth_348_1777450907.jpg
+457,2026-04-29 13:52:02,Ahmedabad Office,exit,A5,
+458,2026-04-29 13:57:24,Ahmedabad Office,unauthorized,Unknown (ID: 230) - 6m 29s,/static/snapshots/unauth_230_1777451244.jpg
+459,2026-04-29 14:01:32,Ahmedabad Office,exit,A8,
+460,2026-04-29 14:07:15,Ahmedabad Office,exit,A9,
+461,2026-04-29 14:26:10,Ahmedabad Office,entry,A5,
+462,2026-04-29 14:29:15,Ahmedabad Office,exit,A5,
+463,2026-04-29 14:38:05,Ahmedabad Office,exit,A5,
+464,2026-04-29 14:39:58,Ahmedabad Office,unauthorized,Unknown (ID: 242) - 1m 6s,/static/snapshots/unauth_242_1777453798.jpg
+465,2026-04-29 15:00:19,Bangalore Office - Dahua Ch8,entry,B5,
+466,2026-04-29 15:45:40,Ahmedabad Office,entry,A10,
+467,2026-04-29 15:47:34,Bangalore Office - Dahua Ch8,entry,B7,
+468,2026-04-29 15:52:33,Bangalore Office - Dahua Ch8,exit,B2,
+469,2026-04-29 15:54:53,Bangalore Office - Dahua Ch8,exit,B2,
+470,2026-04-29 16:21:52,Ahmedabad Office,entry,A9,
+471,2026-04-29 16:23:10,Ahmedabad Office,exit,A5,
+472,2026-04-29 16:24:43,Bangalore Office - Dahua Ch8,entry,B4,
+473,2026-04-29 16:29:54,Ahmedabad Office,entry,A5,
+474,2026-04-29 16:31:45,Ahmedabad Office,entry,A7,
+475,2026-04-29 16:36:33,Bangalore Office - Dahua Ch8,entry,B2,
+476,2026-04-29 16:56:56,Ahmedabad Office,unauthorized,Unknown (ID: 244) - 8m 11s,/static/snapshots/unauth_244_1777462016.jpg
+477,2026-04-29 16:59:57,Ahmedabad Office,unauthorized,Unknown (ID: 361) - 5m 21s,/static/snapshots/unauth_361_1777462197.jpg
+478,2026-04-29 17:01:43,Ahmedabad Office,exit,A6,
+479,2026-04-29 17:02:40,Ahmedabad Office,entry,A1,
+480,2026-04-29 17:04:08,Ahmedabad Office,unauthorized,Unknown (ID: 163) - 11m 0s,/static/snapshots/unauth_163_1777462448.jpg
+481,2026-04-29 17:06:15,Ahmedabad Office,entry,A4,
+482,2026-04-29 17:11:59,Ahmedabad Office,unauthorized,Unknown (ID: 19) - 6m 49s,/static/snapshots/unauth_19_1777462919.jpg
+483,2026-04-29 17:21:29,Bangalore Office - Dahua Ch8,exit,B2,
+484,2026-04-29 17:38:41,Bangalore Office - Dahua Ch8,entry,B4,
+485,2026-04-29 17:41:19,Bangalore Office - Dahua Ch8,exit,B5,
+486,2026-04-29 17:41:52,Ahmedabad Office,exit,A9,
+487,2026-04-29 17:49:52,Ahmedabad Office,entry,A4,
+488,2026-04-29 17:52:00,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 337) - 9m 18s,/static/snapshots/unauth_337_1777465320.jpg
+489,2026-04-29 18:02:38,Ahmedabad Office,unauthorized,Unknown (ID: 79) - 11m 38s,/static/snapshots/unauth_79_1777465958.jpg
+490,2026-04-29 18:08:43,Bangalore Office - Dahua Ch8,exit,B4,
+491,2026-04-29 18:42:43,Ahmedabad Office,exit,A5,
+492,2026-04-29 19:18:54,Ahmedabad Office,exit,A5,
+493,2026-04-29 19:32:33,Bangalore Office - Dahua Ch8,exit,B2,
+494,2026-04-29 19:33:40,Ahmedabad Office,exit,A10,
+495,2026-04-29 19:35:21,Bangalore Office - Dahua Ch8,entry,B6,
+496,2026-04-29 19:41:23,Bangalore Office - Dahua Ch8,entry,B5,
+497,2026-04-29 19:45:03,Bangalore Office - Dahua Ch8,exit,B7,
+498,2026-04-29 19:46:30,Ahmedabad Office,unauthorized,Unknown (ID: 270) - 7m 3s,/static/snapshots/unauth_270_1777472190.jpg
+499,2026-04-29 20:33:45,Ahmedabad Office,exit,A7,
+500,2026-04-29 20:35:40,Ahmedabad Office,exit,A1,
+501,2026-04-29 20:36:15,Ahmedabad Office,exit,A4,
+502,2026-04-29 20:37:41,Bangalore Office - Dahua Ch8,exit,B4,
+503,2026-04-29 21:10:34,Bangalore Office - Dahua Ch8,exit,B7,
+504,2026-04-29 22:50:21,Bangalore Office - Dahua Ch8,exit,B6,
+505,2026-04-29 23:22:52,Ahmedabad Office,exit,A4,
+506,2026-04-29 23:40:23,Bangalore Office - Dahua Ch8,exit,B5,
+507,2026-04-30 09:35:36,Ahmedabad Office,unauthorized,Unknown (ID: 189) - 8m 1s,/static/snapshots/unauth_189_1777521936.jpg
+508,2026-04-30 09:56:35,Ahmedabad Office,entry,A4,
+509,2026-04-30 10:03:10,Ahmedabad Office,unauthorized,Unknown (ID: 226) - 7m 8s,/static/snapshots/unauth_226_1777523590.jpg
+510,2026-04-30 10:14:59,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 136) - 10m 43s,/static/snapshots/unauth_136_1777524299.jpg
+511,2026-04-30 10:23:43,Ahmedabad Office,entry,A3,
+512,2026-04-30 11:00:36,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 146) - 8m 3s,/static/snapshots/unauth_146_1777527036.jpg
+513,2026-04-30 11:19:57,Ahmedabad Office,entry,A2,
+514,2026-04-30 11:47:55,Ahmedabad Office,unauthorized,Unknown (ID: 149) - 41s,/static/snapshots/unauth_149_1777529875.jpg
+515,2026-04-30 11:48:57,Ahmedabad Office,exit,A2,
+516,2026-04-30 12:00:57,Ahmedabad Office,entry,A5,
+517,2026-04-30 12:02:46,Ahmedabad Office,unauthorized,Unknown (ID: 181) - 10m 32s,/static/snapshots/unauth_181_1777530766.jpg
+518,2026-04-30 12:09:26,Ahmedabad Office,unauthorized,Unknown (ID: 354) - 3m 31s,/static/snapshots/unauth_354_1777531166.jpg
+519,2026-04-30 12:14:18,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 362) - 4m 52s,/static/snapshots/unauth_362_1777531458.jpg
+520,2026-04-30 12:22:35,Ahmedabad Office,unauthorized,Unknown (ID: 370) - 4m 43s,/static/snapshots/unauth_370_1777531955.jpg
+521,2026-04-30 12:25:52,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 390) - 9m 26s,/static/snapshots/unauth_390_1777532152.jpg
+522,2026-04-30 12:27:31,Bangalore Office - Dahua Ch8,entry,B4,
+523,2026-04-30 12:39:43,Ahmedabad Office,exit,A3,
+524,2026-04-30 12:51:43,Ahmedabad Office,unauthorized,Unknown (ID: 208) - 5m 7s,/static/snapshots/unauth_208_1777533703.jpg
+525,2026-04-30 12:56:31,Bangalore Office - Dahua Ch8,exit,B4,
+526,2026-04-30 12:58:35,Ahmedabad Office,exit,A4,
+527,2026-04-30 13:00:57,Ahmedabad Office,entry,A3,
+528,2026-04-30 13:03:23,Ahmedabad Office,entry,A5,
+529,2026-04-30 13:11:03,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 130) - 8m 12s,/static/snapshots/unauth_130_1777534863.jpg
+530,2026-04-30 13:12:33,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 186) - 10m 40s,/static/snapshots/unauth_186_1777534953.jpg
+531,2026-04-30 13:13:32,Bangalore Office - Dahua Ch8,entry,B8,
+532,2026-04-30 13:15:54,Ahmedabad Office,entry,A4,
+533,2026-04-30 13:21:38,Ahmedabad Office,unauthorized,Unknown (ID: 74) - 5m 23s,/static/snapshots/unauth_74_1777535498.jpg
+534,2026-04-30 13:36:48,Ahmedabad Office,entry,A3,
+535,2026-04-30 13:46:06,Ahmedabad Office,entry,A6,
+536,2026-04-30 13:46:37,Bangalore Office - Dahua Ch8,entry,B8,
+537,2026-04-30 13:47:44,Ahmedabad Office,entry,A7,
+538,2026-04-30 13:51:33,Ahmedabad Office,entry,A8,
+539,2026-04-30 13:55:57,Ahmedabad Office,exit,A3,
+540,2026-04-30 13:59:40,Bangalore Office - Dahua Ch8,entry,B3,
+541,2026-04-30 14:09:38,Ahmedabad Office,unauthorized,Unknown (ID: 264) - 2m 26s,/static/snapshots/unauth_264_1777538378.jpg
+542,2026-04-30 14:58:35,Ahmedabad Office,unauthorized,Unknown (ID: 61) - 4m 31s,/static/snapshots/unauth_61_1777541315.jpg
+543,2026-04-30 15:17:02,Ahmedabad Office,entry,A2,
+544,2026-04-30 15:42:24,Bangalore Office - Dahua Ch8,entry,B4,
+545,2026-04-30 15:44:23,Ahmedabad Office,exit,A5,
+546,2026-04-30 15:48:03,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 105) - 4m 36s,/static/snapshots/unauth_105_1777544283.jpg
+547,2026-04-30 15:49:04,Bangalore Office - Dahua Ch8,entry,B4,
+548,2026-04-30 15:53:41,Ahmedabad Office,unauthorized,Unknown (ID: 345) - 8m 4s,/static/snapshots/unauth_345_1777544621.jpg
+549,2026-04-30 16:13:57,Ahmedabad Office,exit,A5,
+550,2026-04-30 16:18:37,Bangalore Office - Dahua Ch8,exit,B8,
+551,2026-04-30 16:19:30,Ahmedabad Office,unauthorized,Unknown (ID: 9) - 6m 20s,/static/snapshots/unauth_9_1777546170.jpg
+552,2026-04-30 16:22:33,Ahmedabad Office,exit,A8,
+553,2026-04-30 16:35:38,Bangalore Office - Dahua Ch8,entry,B3,
+554,2026-04-30 16:35:54,Ahmedabad Office,exit,A4,
+555,2026-04-30 16:41:06,Ahmedabad Office,exit,A6,
+556,2026-04-30 16:51:24,Ahmedabad Office,entry,A6,
+557,2026-04-30 17:05:18,Bangalore Office - Dahua Ch8,entry,B8,
+558,2026-04-30 17:11:31,Bangalore Office - Dahua Ch8,entry,B1,
+559,2026-04-30 17:24:21,Ahmedabad Office,entry,A7,
+560,2026-04-30 17:30:32,Bangalore Office - Dahua Ch8,exit,B8,
+561,2026-04-30 17:34:18,Ahmedabad Office,unauthorized,Unknown (ID: 329) - 5m 12s,/static/snapshots/unauth_329_1777550658.jpg
+562,2026-04-30 17:48:34,Bangalore Office - Dahua Ch8,entry,B2,
+563,2026-04-30 17:57:18,Ahmedabad Office,entry,A10,
+564,2026-04-30 18:08:32,Ahmedabad Office,entry,A3,
+565,2026-04-30 18:09:14,Ahmedabad Office,entry,A4,
+566,2026-04-30 18:09:48,Ahmedabad Office,entry,A2,
+567,2026-04-30 18:10:16,Bangalore Office - Dahua Ch8,entry,B3,
+568,2026-04-30 18:11:37,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 224) - 10m 53s,/static/snapshots/unauth_224_1777552897.jpg
+569,2026-04-30 18:18:47,Ahmedabad Office,entry,A5,
+570,2026-04-30 18:23:28,Ahmedabad Office,unauthorized,Unknown (ID: 391) - 1m 21s,/static/snapshots/unauth_391_1777553608.jpg
+571,2026-04-30 18:30:22,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 210) - 5m 44s,/static/snapshots/unauth_210_1777554022.jpg
+572,2026-04-30 18:38:44,Ahmedabad Office,exit,A7,
+573,2026-04-30 18:41:02,Ahmedabad Office,exit,A2,
+574,2026-04-30 18:47:48,Ahmedabad Office,exit,A3,
+575,2026-04-30 18:49:24,Bangalore Office - Dahua Ch8,exit,B4,
+576,2026-04-30 18:55:12,Ahmedabad Office,entry,A7,
+577,2026-04-30 18:59:40,Bangalore Office - Dahua Ch8,exit,B3,
+578,2026-04-30 19:07:34,Bangalore Office - Dahua Ch8,exit,B2,
+579,2026-04-30 19:13:18,Bangalore Office - Dahua Ch8,exit,B8,
+580,2026-04-30 19:14:21,Ahmedabad Office,exit,A7,
+581,2026-04-30 19:14:31,Bangalore Office - Dahua Ch8,exit,B1,
+582,2026-04-30 19:15:29,Bangalore Office - Dahua Ch8,phone_detected,Unknown,
+583,2026-04-30 19:30:40,Ahmedabad Office,entry,A3,
+584,2026-04-30 19:32:38,Bangalore Office - Dahua Ch8,exit,B3,
+585,2026-04-30 19:34:33,Ahmedabad Office,unauthorized,Unknown (ID: 253) - 2m 20s,/static/snapshots/unauth_253_1777557873.jpg
+586,2026-04-30 19:51:43,Ahmedabad Office,unauthorized,Unknown (ID: 164) - 11m 26s,/static/snapshots/unauth_164_1777558903.jpg
+587,2026-04-30 19:57:04,Bangalore Office - Dahua Ch8,exit,B4,
+588,2026-04-30 20:09:18,Ahmedabad Office,exit,A10,
+589,2026-04-30 20:19:48,Ahmedabad Office,exit,A2,
+590,2026-04-30 20:23:24,Ahmedabad Office,exit,A6,
+591,2026-04-30 21:12:12,Ahmedabad Office,exit,A7,
+592,2026-04-30 21:18:40,Ahmedabad Office,exit,A3,
+593,2026-04-30 21:26:47,Ahmedabad Office,exit,A5,
+594,2026-04-30 22:20:14,Ahmedabad Office,exit,A4,
+595,2026-04-30 22:55:16,Bangalore Office - Dahua Ch8,exit,B3,
+596,2026-04-30 23:25:32,Ahmedabad Office,exit,A3,
+597,2026-05-04 09:59:42,Ahmedabad Office,entry,A10,
+598,2026-05-04 10:00:26,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 231) - 10m 11s,/static/snapshots/unauth_231_1777869026.jpg
+599,2026-05-04 10:02:08,Ahmedabad Office,unauthorized,Unknown (ID: 366) - 5m 44s,/static/snapshots/unauth_366_1777869128.jpg
+600,2026-05-04 10:27:02,Bangalore Office - Dahua Ch8,entry,B2,
+601,2026-05-04 10:41:34,Bangalore Office - Dahua Ch8,entry,B8,
+602,2026-05-04 10:57:02,Bangalore Office - Dahua Ch8,exit,B2,
+603,2026-05-04 11:03:34,Bangalore Office - Dahua Ch8,exit,B8,
+604,2026-05-04 11:04:30,Ahmedabad Office,entry,A7,
+605,2026-05-04 11:13:52,Ahmedabad Office,entry,A2,
+606,2026-05-04 11:18:28,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 358) - 8m 19s,/static/snapshots/unauth_358_1777873708.jpg
+607,2026-05-04 11:18:38,Bangalore Office - Dahua Ch8,entry,B2,
+608,2026-05-04 11:23:43,Ahmedabad Office,entry,A5,
+609,2026-05-04 11:28:22,Ahmedabad Office,entry,A5,
+610,2026-05-04 11:56:05,Ahmedabad Office,unauthorized,Unknown (ID: 34) - 5m 19s,/static/snapshots/unauth_34_1777875965.jpg
+611,2026-05-04 12:00:18,Ahmedabad Office,entry,A6,
+612,2026-05-04 12:09:58,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 137) - 2m 28s,/static/snapshots/unauth_137_1777876798.jpg
+613,2026-05-04 12:25:42,Ahmedabad Office,unauthorized,Unknown (ID: 49) - 3m 12s,/static/snapshots/unauth_49_1777877742.jpg
+614,2026-05-04 12:30:42,Ahmedabad Office,exit,A10,
+615,2026-05-04 12:42:31,Bangalore Office - Dahua Ch8,entry,B2,
+616,2026-05-04 12:49:55,Ahmedabad Office,unauthorized,Unknown (ID: 370) - 11m 40s,/static/snapshots/unauth_370_1777879195.jpg
+617,2026-05-04 12:51:50,Ahmedabad Office,entry,A4,
+618,2026-05-04 12:54:07,Bangalore Office - Dahua Ch8,entry,B1,
+619,2026-05-04 12:59:22,Bangalore Office - Dahua Ch8,entry,B4,
+620,2026-05-04 13:03:29,Ahmedabad Office,unauthorized,Unknown (ID: 68) - 8m 48s,/static/snapshots/unauth_68_1777880009.jpg
+621,2026-05-04 13:11:29,Ahmedabad Office,unauthorized,Unknown (ID: 273) - 5m 53s,/static/snapshots/unauth_273_1777880489.jpg
+622,2026-05-04 13:12:51,Ahmedabad Office,unauthorized,Unknown (ID: 58) - 5m 41s,/static/snapshots/unauth_58_1777880571.jpg
+623,2026-05-04 13:20:38,Bangalore Office - Dahua Ch8,exit,B2,
+624,2026-05-04 13:23:04,Bangalore Office - Dahua Ch8,entry,B6,
+625,2026-05-04 13:24:52,Ahmedabad Office,phone_detected,Unknown,
+626,2026-05-04 13:27:52,Ahmedabad Office,exit,A2,
+627,2026-05-04 13:28:37,Bangalore Office - Dahua Ch8,entry,B4,
+628,2026-05-04 13:45:23,Ahmedabad Office,unauthorized,Unknown (ID: 40) - 9m 40s,/static/snapshots/unauth_40_1777882523.jpg
+629,2026-05-04 13:48:17,Ahmedabad Office,entry,A6,
+630,2026-05-04 13:49:22,Bangalore Office - Dahua Ch8,exit,B4,
+631,2026-05-04 13:50:25,Ahmedabad Office,entry,A7,
+632,2026-05-04 13:52:34,Ahmedabad Office,entry,A5,
+633,2026-05-04 14:10:23,Ahmedabad Office,entry,A8,
+634,2026-05-04 14:12:25,Ahmedabad Office,exit,A7,
+635,2026-05-04 14:21:35,Ahmedabad Office,entry,A8,
+636,2026-05-04 14:46:31,Bangalore Office - Dahua Ch8,exit,B2,
+637,2026-05-04 14:47:18,Ahmedabad Office,exit,A6,
+638,2026-05-04 14:57:49,Ahmedabad Office,entry,A2,
+639,2026-05-04 15:06:53,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 100) - 5m 6s,/static/snapshots/unauth_100_1777887413.jpg
+640,2026-05-04 15:08:30,Ahmedabad Office,exit,A7,
+641,2026-05-04 15:09:23,Bangalore Office - Dahua Ch8,entry,B5,
+642,2026-05-04 15:11:49,Ahmedabad Office,unauthorized,Unknown (ID: 67) - 7m 26s,/static/snapshots/unauth_67_1777887709.jpg
+643,2026-05-04 15:28:32,Ahmedabad Office,entry,A6,
+644,2026-05-04 15:39:49,Ahmedabad Office,unauthorized,Unknown (ID: 195) - 2m 34s,/static/snapshots/unauth_195_1777889389.jpg
+645,2026-05-04 15:50:32,Ahmedabad Office,entry,A2,
+646,2026-05-04 16:02:14,Ahmedabad Office,entry,A8,
+647,2026-05-04 16:02:15,Ahmedabad Office,entry,A2,
+648,2026-05-04 16:05:37,Bangalore Office - Dahua Ch8,exit,B4,
+649,2026-05-04 16:08:06,Ahmedabad Office,unauthorized,Unknown (ID: 316) - 10m 3s,/static/snapshots/unauth_316_1777891086.jpg
+650,2026-05-04 16:26:53,Bangalore Office - Dahua Ch8,phone_detected,Unknown,
+651,2026-05-04 16:32:58,Bangalore Office - Dahua Ch8,entry,B5,
+652,2026-05-04 16:43:22,Ahmedabad Office,exit,A5,
+653,2026-05-04 16:44:30,Bangalore Office - Dahua Ch8,entry,B8,
+654,2026-05-04 16:46:23,Bangalore Office - Dahua Ch8,exit,B5,
+655,2026-05-04 16:53:47,Ahmedabad Office,entry,A2,
+656,2026-05-04 16:54:59,Ahmedabad Office,unauthorized,Unknown (ID: 20) - 3m 2s,/static/snapshots/unauth_20_1777893899.jpg
+657,2026-05-04 17:02:07,Bangalore Office - Dahua Ch8,exit,B1,
+658,2026-05-04 17:06:50,Ahmedabad Office,exit,A4,
+659,2026-05-04 17:22:43,Ahmedabad Office,exit,A5,
+660,2026-05-04 17:35:23,Ahmedabad Office,exit,A8,
+661,2026-05-04 17:36:32,Ahmedabad Office,exit,A6,
+662,2026-05-04 17:41:58,Bangalore Office - Dahua Ch8,exit,B5,
+663,2026-05-04 17:57:04,Bangalore Office - Dahua Ch8,exit,B6,
+664,2026-05-04 18:03:53,Ahmedabad Office,unauthorized,Unknown (ID: 64) - 8m 53s,/static/snapshots/unauth_64_1777898033.jpg
+665,2026-05-04 18:05:15,Bangalore Office - Dahua Ch8,entry,B1,
+666,2026-05-04 18:09:34,Ahmedabad Office,exit,A5,
+667,2026-05-04 18:10:49,Ahmedabad Office,exit,A2,
+668,2026-05-04 18:45:54,Ahmedabad Office,entry,A6,
+669,2026-05-04 18:47:57,Ahmedabad Office,entry,A10,
+670,2026-05-04 18:56:17,Ahmedabad Office,exit,A6,
+671,2026-05-04 19:14:35,Ahmedabad Office,exit,A8,
+672,2026-05-04 19:23:57,Ahmedabad Office,exit,A10,
+673,2026-05-04 19:39:14,Ahmedabad Office,exit,A8,
+674,2026-05-04 19:59:57,Ahmedabad Office,unauthorized,Unknown (ID: 36) - 8m 6s,/static/snapshots/unauth_36_1777904997.jpg
+675,2026-05-04 20:01:15,Ahmedabad Office,exit,A2,
+676,2026-05-04 20:48:32,Ahmedabad Office,exit,A2,
+677,2026-05-04 21:37:47,Ahmedabad Office,exit,A2,
+678,2026-05-04 21:48:15,Bangalore Office - Dahua Ch8,exit,B1,
+679,2026-05-04 22:29:30,Bangalore Office - Dahua Ch8,exit,B8,
+680,2026-05-04 23:24:54,Ahmedabad Office,exit,A6,
+681,2026-05-05 10:27:22,Ahmedabad Office,unauthorized,Unknown (ID: 359) - 1m 8s,/static/snapshots/unauth_359_1777957042.jpg
+682,2026-05-05 10:55:15,Bangalore Office - Dahua Ch8,entry,B2,
+683,2026-05-05 11:04:02,Bangalore Office - Dahua Ch8,entry,B6,
+684,2026-05-05 11:23:25,Ahmedabad Office,unauthorized,Unknown (ID: 161) - 11m 8s,/static/snapshots/unauth_161_1777960405.jpg
+685,2026-05-05 11:44:24,Bangalore Office - Dahua Ch8,entry,B7,
+686,2026-05-05 11:48:41,Ahmedabad Office,entry,A3,
+687,2026-05-05 12:01:07,Bangalore Office - Dahua Ch8,entry,B1,
+688,2026-05-05 12:02:46,Bangalore Office - Dahua Ch8,entry,B6,
+689,2026-05-05 12:03:37,Ahmedabad Office,unauthorized,Unknown (ID: 246) - 2m 57s,/static/snapshots/unauth_246_1777962817.jpg
+690,2026-05-05 12:04:45,Bangalore Office - Dahua Ch8,entry,B4,
+691,2026-05-05 12:33:24,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 231) - 7m 36s,/static/snapshots/unauth_231_1777964604.jpg
+692,2026-05-05 12:38:02,Bangalore Office - Dahua Ch8,entry,B2,
+693,2026-05-05 12:41:41,Ahmedabad Office,exit,A3,
+694,2026-05-05 12:47:50,Ahmedabad Office,entry,A8,
+695,2026-05-05 12:59:36,Ahmedabad Office,unauthorized,Unknown (ID: 22) - 32s,/static/snapshots/unauth_22_1777966176.jpg
+696,2026-05-05 13:00:22,Bangalore Office - Dahua Ch8,entry,B1,
+697,2026-05-05 13:05:25,Ahmedabad Office,entry,A7,
+698,2026-05-05 13:37:25,Bangalore Office - Dahua Ch8,entry,B5,
+699,2026-05-05 13:40:23,Ahmedabad Office,entry,A5,
+700,2026-05-05 14:36:15,Bangalore Office - Dahua Ch8,exit,B2,
+701,2026-05-05 14:50:23,Ahmedabad Office,exit,A5,
+702,2026-05-05 15:10:20,Ahmedabad Office,unauthorized,Unknown (ID: 267) - 7m 35s,/static/snapshots/unauth_267_1777974020.jpg
+703,2026-05-05 15:15:50,Bangalore Office - Dahua Ch8,entry,B3,
+704,2026-05-05 15:21:07,Bangalore Office - Dahua Ch8,exit,B1,
+705,2026-05-05 15:29:32,Ahmedabad Office,entry,A7,
+706,2026-05-05 15:34:46,Bangalore Office - Dahua Ch8,entry,B2,
+707,2026-05-05 15:35:45,Ahmedabad Office,entry,A5,
+708,2026-05-05 15:47:22,Bangalore Office - Dahua Ch8,exit,B1,
+709,2026-05-05 15:58:25,Ahmedabad Office,exit,A7,
+710,2026-05-05 16:00:16,Ahmedabad Office,unauthorized,Unknown (ID: 335) - 6m 11s,/static/snapshots/unauth_335_1777977016.jpg
+711,2026-05-05 16:09:56,Ahmedabad Office,entry,A7,
+712,2026-05-05 16:12:24,Bangalore Office - Dahua Ch8,exit,B7,
+713,2026-05-05 16:12:46,Bangalore Office - Dahua Ch8,exit,B6,
+714,2026-05-05 16:20:38,Ahmedabad Office,entry,A8,
+715,2026-05-05 16:24:25,Bangalore Office - Dahua Ch8,entry,B5,
+716,2026-05-05 16:39:20,Ahmedabad Office,entry,A8,
+717,2026-05-05 16:40:15,Bangalore Office - Dahua Ch8,entry,B2,
+718,2026-05-05 16:51:50,Ahmedabad Office,exit,A8,
+719,2026-05-05 16:57:02,Bangalore Office - Dahua Ch8,exit,B6,
+720,2026-05-05 16:57:25,Bangalore Office - Dahua Ch8,exit,B5,
+721,2026-05-05 16:59:12,Bangalore Office - Dahua Ch8,unauthorized,Unknown (ID: 218) - 2m 0s,/static/snapshots/unauth_218_1777980552.jpg
+722,2026-05-05 16:59:59,Bangalore Office - Dahua Ch8,entry,B7,
+723,2026-05-05 17:42:45,Bangalore Office - Dahua Ch8,exit,B4,
+724,2026-05-05 17:47:15,Bangalore Office - Dahua Ch8,exit,B2,
+725,2026-05-05 17:50:36,Bangalore Office - Dahua Ch8,entry,B5,
+726,2026-05-05 17:54:46,Bangalore Office - Dahua Ch8,exit,B2,
+727,2026-05-05 17:57:32,Bangalore Office - Dahua Ch8,entry,B8,
+728,2026-05-05 18:09:10,Ahmedabad Office,unauthorized,Unknown (ID: 338) - 10m 42s,/static/snapshots/unauth_338_1777984750.jpg
+729,2026-05-05 18:10:02,Bangalore Office - Dahua Ch8,exit,B2,
+730,2026-05-05 18:20:25,Bangalore Office - Dahua Ch8,exit,B5,
+731,2026-05-05 18:26:36,Bangalore Office - Dahua Ch8,exit,B5,
+732,2026-05-05 18:36:45,Ahmedabad Office,exit,A5,
+733,2026-05-05 19:07:24,Bangalore Office - Dahua Ch8,entry,B7,
+734,2026-05-05 19:15:59,Bangalore Office - Dahua Ch8,exit,B7,
+735,2026-05-05 19:31:55,Ahmedabad Office,entry,A10,
+736,2026-05-05 19:32:50,Bangalore Office - Dahua Ch8,exit,B3,
+737,2026-05-05 19:51:41,Bangalore Office - Dahua Ch8,entry,B5,
+738,2026-05-05 19:56:56,Ahmedabad Office,exit,A7,
+739,2026-05-05 19:59:00,Bangalore Office - Dahua Ch8,exit,B5,
+740,2026-05-05 19:59:12,Bangalore Office - Dahua Ch8,exit,B7,
+741,2026-05-05 20:38:38,Ahmedabad Office,exit,A8,
+742,2026-05-05 20:53:32,Ahmedabad Office,exit,A7,
+743,2026-05-05 21:02:55,Ahmedabad Office,exit,A10,
+744,2026-05-05 21:50:32,Bangalore Office - Dahua Ch8,exit,B8,
+745,2026-05-05 22:15:20,Ahmedabad Office,exit,A8,
