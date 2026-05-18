@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FCC Platform — Best-in-Class Wireframe</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #09090f;
+    --surface: #111118;
+    --surface-2: #18181f;
+    --surface-3: #222230;
+    --border: #2a2a3a;
+    --border-light: #33334a;
+    --text: #e8e8f0;
+    --text-muted: #7a7a9a;
+    --text-dim: #4a4a6a;
+    --accent: #5b6af0;
+    --accent-hover: #6e7df5;
+    --accent-glow: rgba(91, 106, 240, 0.15);
+    --green: #22c98a;
+    --green-dim: rgba(34, 201, 138, 0.12);
+    --amber: #f5a623;
+    --amber-dim: rgba(245, 166, 35, 0.12);
+    --red: #e85555;
+    --red-dim: rgba(232, 85, 85, 0.12);
+    --cyan: #3ac9e0;
+    --cyan-dim: rgba(58, 201, 224, 0.1);
+    --purple: #a855f7;
+    --purple-dim: rgba(168, 85, 247, 0.1);
+    --sidebar-w: 220px;
+    --topbar-h: 56px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  /* ─── SIDEBAR ─── */
+  .sidebar {
+    width: var(--sidebar-w);
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: auto;
+  }
+
+  .logo {
+    padding: 18px 16px 14px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 28px; height: 28px;
+    background: var(--accent);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  .logo-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .logo-sub {
+    font-size: 9px;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .nav-section {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-label {
+    padding: 6px 16px 4px;
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+    border-left: 2px solid transparent;
+    color: var(--text-muted);
+    font-size: 12.5px;
+    position: relative;
+  }
+
+  .nav-item:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .nav-item.active {
+    background: var(--accent-glow);
+    border-left-color: var(--accent);
+    color: var(--text);
+  }
+
+  .nav-item .icon { font-size: 14px; width: 16px; text-align: center; }
+
+  .badge {
+    margin-left: auto;
+    background: var(--red);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 1px 5px;
+    border-radius: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .badge.amber { background: var(--amber); color: #000; }
+  .badge.green { background: var(--green); color: #000; }
+
+  .tier-tag {
+    margin-left: auto;
+    font-size: 8px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.3px;
+  }
+  .tier-tag.must { background: rgba(91,106,240,0.2); color: var(--accent); }
+  .tier-tag.good { background: rgba(34,201,138,0.15); color: var(--green); }
+  .tier-tag.future { background: rgba(168,85,247,0.15); color: var(--purple); }
+
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .user-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .avatar {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--purple));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; color: #fff;
+  }
+
+  .user-info { flex: 1; }
+  .user-name { font-size: 12px; font-weight: 500; }
+  .user-role { font-size: 10px; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; }
+
+  /* ─── MAIN ─── */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .topbar {
+    height: var(--topbar-h);
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 16px;
+    flex-shrink: 0;
+  }
+
+  .page-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .topbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .status-pill.live { background: var(--green-dim); color: var(--green); }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .btn {
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-hover); }
+  .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text-muted); }
+  .btn-ghost:hover { border-color: var(--border-light); color: var(--text); }
+
+  /* ─── CONTENT ─── */
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: none;
+  }
+  .content.active { display: block; }
+
+  /* ─── LEGEND ─── */
+  .legend-bar {
+    display: flex;
+    gap: 16px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .legend-label { font-size: 10px; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.5px; }
+  .legend-item {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 11px; font-family: 'IBM Plex Mono', monospace;
+  }
+  .legend-dot { width: 8px; height: 8px; border-radius: 2px; }
+  .ld-must { background: var(--accent); }
+  .ld-good { background: var(--green); }
+  .ld-future { background: var(--purple); }
+
+  /* ─── GRID ─── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .card.must::before { background: var(--accent); }
+  .card.good::before { background: var(--green); }
+  .card.future::before { background: var(--purple); }
+
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .stat-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-number.red { color: var(--red); }
+  .stat-number.amber { color: var(--amber); }
+  .stat-number.green { color: var(--green); }
+  .stat-number.accent { color: var(--accent); }
+
+  .stat-sub { font-size: 11px; color: var(--text-muted); }
+
+  /* ─── ALERT TABLE ─── */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .table-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .table-header-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead tr { background: var(--surface-2); }
+  th {
+    padding: 9px 14px;
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-2); }
+
+  .risk-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .risk-high { background: var(--red-dim); color: var(--red); }
+  .risk-med { background: var(--amber-dim); color: var(--amber); }
+  .risk-low { background: var(--green-dim); color: var(--green); }
+
+  .score-bar {
+    display: flex; align-items: center; gap: 8px;
+  }
+  .bar-track { flex: 1; height: 4px; background: var(--surface-3); border-radius: 2px; }
+  .bar-fill { height: 100%; border-radius: 2px; }
+
+  /* ─── RISK HEATMAP ─── */
+  .heatmap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .hm-cell {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .hm-cell:hover { opacity: 0.8; }
+
+  /* ─── CASE DETAIL ─── */
+  .case-timeline { position: relative; padding-left: 20px; }
+  .timeline-item {
+    position: relative;
+    padding: 0 0 16px 12px;
+    border-left: 1px solid var(--border);
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px; top: 5px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+  .timeline-item:last-child { border-left-color: transparent; }
+  .tl-title { font-size: 12px; font-weight: 500; margin-bottom: 2px; }
+  .tl-meta { font-size: 10px; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; }
+
+  /* ─── SEARCH / FILTERS ─── */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .input-field {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 12px;
+    color: var(--text);
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .input-field:focus { border-color: var(--accent); }
+  .input-field.wide { flex: 1; min-width: 200px; }
+
+  select.input-field { cursor: pointer; }
+
+  /* ─── GRAPH PLACEHOLDER ─── */
+  .graph-container {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--text-dim);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+  }
+  .graph-icon { font-size: 32px; opacity: 0.4; }
+
+  /* ─── MINI CHART (SVG bar) ─── */
+  .mini-chart svg { width: 100%; height: 60px; }
+
+  /* ─── SECTION HEADERS ─── */
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+
+  /* ─── CAPABILITY TAG CLOUD ─── */
+  .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .cap-tag {
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+    border: 1px solid;
+  }
+  .cap-tag.must { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+  .cap-tag.good { border-color: var(--green); color: var(--green); background: var(--green-dim); }
+  .cap-tag.future { border-color: var(--purple); color: var(--purple); background: var(--purple-dim); }
+
+  /* ─── SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* ─── MODULE LABEL ─── */
+  .module-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  .ml-must { background: var(--accent-glow); color: var(--accent); border: 1px solid rgba(91,106,240,0.3); }
+  .ml-good { background: var(--green-dim); color: var(--green); border: 1px solid rgba(34,201,138,0.3); }
+  .ml-future { background: var(--purple-dim); color: var(--purple); border: 1px solid rgba(168,85,247,0.3); }
+
+  /* ─── ROLE TAG ─── */
+  .role-tag {
+    font-size: 9px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--text-dim);
+    background: var(--surface-3);
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 16px 0;
+  }
+
+  /* ─── WIDE TABLE ─── */
+  .mb16 { margin-bottom: 16px; }
+  .mt16 { margin-top: 16px; }
+
+  /* Two-col layout inside card */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* flow step row */
+  .flow-steps { display: flex; gap: 0; margin-top: 12px; }
+  .flow-step {
+    flex: 1;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-right: none;
+    padding: 10px 12px;
+    font-size: 11px;
+    position: relative;
+  }
+  .flow-step:last-child { border-right: 1px solid var(--border); border-radius: 0 6px 6px 0; }
+  .flow-step:first-child { border-radius: 6px 0 0 6px; }
+  .flow-step-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .flow-step-val { font-size: 11.5px; color: var(--text); }
+
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="logo">
+    <div class="logo-icon">FC</div>
+    <div>
+      <div class="logo-text">FinCrime OS</div>
+      <div class="logo-sub">FCC Platform</div>
+    </div>
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-label">Overview</div>
+    <div class="nav-item active" onclick="show('dashboard')">
+      <span class="icon">◈</span> Command Center
+      <span class="tier-tag must">MUST</span>
+    </div>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-label">Detection</div>
+    <div class="nav-item" onclick="show('txn-monitoring')">
+      <span class="icon">⬡</span> Transaction Monitoring
+      <span class="badge">47</span>
+    </div>
+    <div class="nav-item" onclick="show('sanctions')">
+      <span class="icon">◎</span> Sanctions & PEP Screening
+      <span class="badge amber">12</span>
+    </div>
+    <div class="nav-item" onclick="show('fraud')">
+      <span class="icon">◈</span> Fraud Detection
+      <span class="badge">8</span>
+    </div>
+    <div class="nav-item" onclick="show('network')">
+      <span class="icon">⬡</span> Network & Graph Intel
+      <span class="tier-tag good">GOOD</span>
+    </div>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-label">Customer Risk</div>
+    <div class="nav-item" onclick="show('kyc')">
+      <span class="icon">◉</span> KYC / CDD / EDD
+      <span class="tier-tag must">MUST</span>
+    </div>
+    <div class="nav-item" onclick="show('risk-scoring')">
+      <span class="icon">◈</span> Risk Scoring Engine
+      <span class="tier-tag must">MUST</span>
+    </div>
+    <div class="nav-item" onclick="show('adverse')">
+      <span class="icon">◎</span> Adverse Media
+      <span class="tier-tag good">GOOD</span>
+    </div>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-label">Investigation</div>
+    <div class="nav-item" onclick="show('case')">
+      <span class="icon">⬡</span> Case Management
+      <span class="badge amber">5</span>
+    </div>
+    <div class="nav-item" onclick="show('sar')">
+      <span class="icon">◈</span> SAR / STR Filing
+      <span class="tier-tag must">MUST</span>
+    </div>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-label">Governance</div>
+    <div class="nav-item" onclick="show('reporting')">
+      <span class="icon">◉</span> Regulatory Reporting
+      <span class="tier-tag must">MUST</span>
+    </div>
+    <div class="nav-item" onclick="show('audit')">
+      <span class="icon">◎</span> Audit & Explainability
+      <span class="tier-tag must">MUST</span>
+    </div>
+    <div class="nav-item" onclick="show('model-gov')">
+      <span class="icon">⬡</span> Model Governance
+      <span class="tier-tag good">GOOD</span>
+    </div>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-label">Future-Ready</div>
+    <div class="nav-item" onclick="show('agentic')">
+      <span class="icon">◈</span> Agentic AI Ops
+      <span class="tier-tag future">AI</span>
+    </div>
+    <div class="nav-item" onclick="show('consortium')">
+      <span class="icon">◎</span> Consortium Intel
+      <span class="tier-tag future">AI</span>
+    </div>
+    <div class="nav-item" onclick="show('capabilities')">
+      <span class="icon">⬡</span> Capability Map
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="user-chip">
+      <div class="avatar">MK</div>
+      <div class="user-info">
+        <div class="user-name">M. Khan</div>
+        <div class="user-role">MLRO</div>
+      </div>
+      <span style="color:var(--text-dim);font-size:10px">⚙</span>
+    </div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- TOP BAR -->
+  <div class="topbar" id="topbar-title">
+    <div class="page-title" id="page-title-text">Command Center</div>
+    <div class="topbar-right">
+      <div class="status-pill live"><div class="dot"></div>Real-time</div>
+      <button class="btn btn-ghost">Export</button>
+      <button class="btn btn-primary">+ New Case</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- DASHBOARD -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content active" id="content-dashboard">
+    <div class="legend-bar">
+      <span class="legend-label">Tier Key:</span>
+      <div class="legend-item"><div class="legend-dot ld-must"></div>Must-Have</div>
+      <div class="legend-item"><div class="legend-dot ld-good"></div>Good-to-Have</div>
+      <div class="legend-item"><div class="legend-dot ld-future"></div>Future-Ready</div>
+    </div>
+
+    <div class="grid-4">
+      <div class="card must">
+        <div class="card-title"><span>◈</span> Open Alerts</div>
+        <div class="stat-number red">47</div>
+        <div class="stat-sub">+12 since yesterday · 9 high-risk</div>
+        <div class="module-label ml-must">MUST-HAVE</div>
+      </div>
+      <div class="card must">
+        <div class="card-title"><span>◎</span> Sanctions Hits</div>
+        <div class="stat-number amber">12</div>
+        <div class="stat-sub">3 true positives confirmed</div>
+        <div class="module-label ml-must">MUST-HAVE</div>
+      </div>
+      <div class="card must">
+        <div class="card-title"><span>⬡</span> Open Cases</div>
+        <div class="stat-number accent">18</div>
+        <div class="stat-sub">5 escalated · 2 SAR pending</div>
+        <div class="module-label ml-must">MUST-HAVE</div>
+      </div>
+      <div class="card good">
+        <div class="card-title"><span>◉</span> False Positive Rate</div>
+        <div class="stat-number green">6.2%</div>
+        <div class="stat-sub">↓ from 14.8% (AI tuning)</div>
+        <div class="module-label ml-good">GOOD-TO-HAVE</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card must">
+        <div class="card-title">Alert Volume — Last 30 Days <div class="module-label ml-must" style="margin-bottom:0;margin-left:8px">MUST</div></div>
+        <div class="mini-chart">
+          <svg viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="agrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#5b6af0" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#5b6af0" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,45 L15,38 L30,40 L45,30 L60,28 L75,35 L90,25 L105,20 L120,22 L135,15 L150,18 L165,12 L180,10 L195,15 L210,20 L225,14 L240,9 L255,12 L270,8 L285,5 L300,8 L300,60 L0,60 Z" fill="url(#agrad)"/>
+            <path d="M0,45 L15,38 L30,40 L45,30 L60,28 L75,35 L90,25 L105,20 L120,22 L135,15 L150,18 L165,12 L180,10 L195,15 L210,20 L225,14 L240,9 L255,12 L270,8 L285,5 L300,8" fill="none" stroke="#5b6af0" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div style="display:flex;gap:16px;margin-top:8px">
+          <div><div class="stat-sub">Avg daily alerts</div><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--text)">234</div></div>
+          <div><div class="stat-sub">Peak</div><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--red)">612</div></div>
+          <div><div class="stat-sub">Auto-closed</div><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--green)">87%</div></div>
+        </div>
+      </div>
+      <div class="card good">
+        <div class="card-title">Typology Risk Heatmap <div class="module-label ml-good" style="margin-bottom:0;margin-left:8px">GOOD</div></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px">Customer segment × Transaction type. Darker = higher risk exposure.</div>
+        <div class="heatmap">
+          <div class="hm-cell" style="background:rgba(232,85,85,0.8);color:#fff">87</div>
+          <div class="hm-cell" style="background:rgba(245,166,35,0.6);color:#000">62</div>
+          <div class="hm-cell" style="background:rgba(245,166,35,0.4);color:#000">44</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.3);color:#aaf">28</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.1);color:#667">12</div>
+          <div class="hm-cell" style="background:rgba(232,85,85,0.5);color:#fff">56</div>
+          <div class="hm-cell" style="background:rgba(232,85,85,0.7);color:#fff">79</div>
+          <div class="hm-cell" style="background:rgba(245,166,35,0.5);color:#000">51</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.2);color:#aaf">21</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.1);color:#667">9</div>
+          <div class="hm-cell" style="background:rgba(245,166,35,0.5);color:#000">48</div>
+          <div class="hm-cell" style="background:rgba(245,166,35,0.3);color:#000">33</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.2);color:#aaf">19</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.15);color:#aaf">15</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.05);color:#667">6</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.15);color:#aaf">16</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.1);color:#667">11</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.05);color:#667">8</div>
+          <div class="hm-cell" style="background:rgba(34,201,138,0.2);color:#2f9">4</div>
+          <div class="hm-cell" style="background:rgba(34,201,138,0.1);color:#2f9">2</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.08);color:#667">7</div>
+          <div class="hm-cell" style="background:rgba(91,106,240,0.05);color:#667">5</div>
+          <div class="hm-cell" style="background:rgba(34,201,138,0.1);color:#2f9">3</div>
+          <div class="hm-cell" style="background:rgba(34,201,138,0.08);color:#2f9">2</div>
+          <div class="hm-cell" style="background:rgba(34,201,138,0.05);color:#2f9">1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-header">
+        <div class="table-header-title">⬡ Priority Alert Queue <div class="module-label ml-must" style="margin-bottom:0;margin-left:8px">MUST-HAVE</div></div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span style="font-size:11px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace">Role: AML Analyst L1</span>
+          <button class="btn btn-ghost" style="padding:4px 10px;font-size:11px">Filter</button>
+        </div>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Alert ID</th><th>Customer</th><th>Typology</th><th>Amount</th><th>Risk Score</th><th>Status</th><th>Assigned</th><th>Action</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">ALT-7841</span></td>
+            <td>Acme Corp Ltd</td>
+            <td>Structuring</td>
+            <td><span style="font-family:'IBM Plex Mono',monospace">$248,000</span></td>
+            <td>
+              <div class="score-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:92%;background:var(--red)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red)">92</span>
+              </div>
+            </td>
+            <td><span class="risk-badge risk-high">HIGH</span></td>
+            <td>R. Patel</td>
+            <td><button class="btn btn-primary" style="padding:4px 10px;font-size:11px">Review</button></td>
+          </tr>
+          <tr>
+            <td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">ALT-7838</span></td>
+            <td>Meridian FX Ltd</td>
+            <td>Rapid Fund Movement</td>
+            <td><span style="font-family:'IBM Plex Mono',monospace">$87,500</span></td>
+            <td>
+              <div class="score-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:74%;background:var(--amber)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--amber)">74</span>
+              </div>
+            </td>
+            <td><span class="risk-badge risk-med">MEDIUM</span></td>
+            <td>Unassigned</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:11px">Assign</button></td>
+          </tr>
+          <tr>
+            <td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">ALT-7831</span></td>
+            <td>J. Vasquez</td>
+            <td>PEP Cross-border</td>
+            <td><span style="font-family:'IBM Plex Mono',monospace">$32,000</span></td>
+            <td>
+              <div class="score-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:88%;background:var(--red)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red)">88</span>
+              </div>
+            </td>
+            <td><span class="risk-badge risk-high">HIGH</span></td>
+            <td>S. Anil</td>
+            <td><button class="btn btn-primary" style="padding:4px 10px;font-size:11px">Review</button></td>
+          </tr>
+          <tr>
+            <td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">ALT-7822</span></td>
+            <td>UrbanPay Ltd</td>
+            <td>Layering</td>
+            <td><span style="font-family:'IBM Plex Mono',monospace">$1,240,000</span></td>
+            <td>
+              <div class="score-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:95%;background:var(--red)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red)">95</span>
+              </div>
+            </td>
+            <td><span class="risk-badge risk-high">HIGH</span></td>
+            <td>R. Patel</td>
+            <td><button class="btn btn-primary" style="padding:4px 10px;font-size:11px">Review</button></td>
+          </tr>
+          <tr>
+            <td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">ALT-7818</span></td>
+            <td>Sharma & Sons</td>
+            <td>Cash Intensive</td>
+            <td><span style="font-family:'IBM Plex Mono',monospace">$14,800</span></td>
+            <td>
+              <div class="score-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:38%;background:var(--green)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--green)">38</span>
+              </div>
+            </td>
+            <td><span class="risk-badge risk-low">LOW</span></td>
+            <td>Auto-queue</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:11px">Close</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TRANSACTION MONITORING -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-txn-monitoring">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Transaction Monitoring</div>
+    <div class="section-sub">Rules engine + ML behavioral scoring. Role: AML Analyst L1 / L2.</div>
+
+    <div class="filter-bar">
+      <input class="input-field wide" placeholder="🔍  Search by customer, account, amount, typology...">
+      <select class="input-field"><option>All Risk Levels</option><option>High</option><option>Medium</option><option>Low</option></select>
+      <select class="input-field"><option>All Typologies</option><option>Structuring</option><option>Layering</option><option>Rapid Movement</option><option>PEP Exposure</option></select>
+      <select class="input-field"><option>Last 30 Days</option><option>Last 7 Days</option><option>Last 90 Days</option></select>
+      <button class="btn btn-primary">Apply</button>
+    </div>
+
+    <div class="grid-2 mb16">
+      <div class="card must">
+        <div class="card-title">Rule Engine Configuration <div class="module-label ml-must" style="margin-bottom:0;margin-left:8px">MUST</div></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:12px">Active scenario rules. Threshold breach triggers Level 1 alert.</div>
+        <table>
+          <thead><tr><th>Rule ID</th><th>Scenario</th><th>Threshold</th><th>Alerts/Day</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">R-001</span></td><td>Cash Structuring</td><td>&lt; $10k × 3</td><td>42</td><td><span class="risk-badge risk-high">ACTIVE</span></td></tr>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">R-002</span></td><td>Rapid Fund Movement</td><td>≥ 5 hops / 24h</td><td>18</td><td><span class="risk-badge risk-high">ACTIVE</span></td></tr>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">R-007</span></td><td>Cross-border PEP</td><td>Any amount</td><td>7</td><td><span class="risk-badge risk-high">ACTIVE</span></td></tr>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">R-014</span></td><td>High-value Round Trips</td><td>&gt; $50k return</td><td>3</td><td><span class="risk-badge risk-med">TUNING</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card good">
+        <div class="card-title">ML Behavioral Scoring <div class="module-label ml-good" style="margin-bottom:0;margin-left:8px">GOOD</div></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:12px">Peer group deviation scoring. Role: Quant Analyst / Model Owner.</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px">Acme Corp — Peer Deviation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--red)">+4.2σ</span></div>
+            <div class="bar-track" style="height:6px"><div class="bar-fill" style="width:90%;background:var(--red)"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px">Meridian FX — Peer Deviation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber)">+1.8σ</span></div>
+            <div class="bar-track" style="height:6px"><div class="bar-fill" style="width:55%;background:var(--amber)"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px">J. Vasquez — Peer Deviation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber)">+2.3σ</span></div>
+            <div class="bar-track" style="height:6px"><div class="bar-fill" style="width:65%;background:var(--amber)"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px">Sharma & Sons — Peer Deviation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--green)">+0.3σ</span></div>
+            <div class="bar-track" style="height:6px"><div class="bar-fill" style="width:12%;background:var(--green)"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Flow: TM Best Practice -->
+    <div class="card must mb16">
+      <div class="card-title">Best-Practice Alert Lifecycle <div class="module-label ml-must" style="margin-bottom:0;margin-left:8px">PROCESS</div></div>
+      <div class="flow-steps">
+        <div class="flow-step"><div class="flow-step-label">Trigger</div><div class="flow-step-val">Rules engine / ML score breach</div></div>
+        <div class="flow-step"><div class="flow-step-label">Action</div><div class="flow-step-val">L1 analyst: profile review + peer-group check</div></div>
+        <div class="flow-step"><div class="flow-step-label">Owner</div><div class="flow-step-val">AML Analyst L1</div></div>
+        <div class="flow-step"><div class="flow-step-label">Output</div><div class="flow-step-val">Closed (reason code) OR escalated case file</div></div>
+        <div class="flow-step"><div class="flow-step-label">SLA</div><div class="flow-step-val">High: 24h · Med: 72h · Low: 7d</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SANCTIONS SCREENING -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-sanctions">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Sanctions & PEP Screening</div>
+    <div class="section-sub">Real-time screening at onboarding and transaction execution. Role: Sanctions Analyst / Compliance Officer.</div>
+
+    <div class="grid-3 mb16">
+      <div class="card must">
+        <div class="card-title">Lists Under Management</div>
+        <div class="stat-number accent">34</div>
+        <div class="stat-sub">OFAC, UN, EU, HMT, FATF grey — last sync 4m ago</div>
+      </div>
+      <div class="card must">
+        <div class="card-title">Screening Latency</div>
+        <div class="stat-number green">28ms</div>
+        <div class="stat-sub">P95 real-time gateway response</div>
+      </div>
+      <div class="card must">
+        <div class="card-title">Unresolved Hits</div>
+        <div class="stat-number amber">12</div>
+        <div class="stat-sub">3 confirmed · 9 false positive pending</div>
+      </div>
+    </div>
+
+    <div class="card must mb16">
+      <div class="card-title">Entity Match Queue</div>
+      <table>
+        <thead><tr><th>Match ID</th><th>Screened Entity</th><th>Matched List Entry</th><th>List</th><th>Score</th><th>Decision</th></tr></thead>
+        <tbody>
+          <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SCR-4412</span></td><td>Globex Trading Co.</td><td>Globex International LLC</td><td>OFAC SDN</td><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--red)">0.94</span></td><td><span class="risk-badge risk-high">BLOCK</span></td></tr>
+          <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SCR-4408</span></td><td>Ahmad Al-Rashid</td><td>Ahmad M. Al-Rasheed</td><td>UN Consolidated</td><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--amber)">0.78</span></td><td><span class="risk-badge risk-med">REVIEW</span></td></tr>
+          <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SCR-4401</span></td><td>Sunrise Bank Ltd</td><td>Sunrise Finance Corp</td><td>EU Restrictive</td><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--amber)">0.71</span></td><td><span class="risk-badge risk-med">REVIEW</span></td></tr>
+          <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SCR-4388</span></td><td>Carlos M. Fuentes</td><td>Carlos Fuentes (PEP-MEX)</td><td>PEP Database</td><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--red)">0.91</span></td><td><span class="risk-badge risk-high">EDD REQ</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card must">
+      <div class="card-title">Best-Practice Screening Process</div>
+      <div class="flow-steps">
+        <div class="flow-step"><div class="flow-step-label">Trigger</div><div class="flow-step-val">Onboarding, transaction initiation, list update</div></div>
+        <div class="flow-step"><div class="flow-step-label">Action</div><div class="flow-step-val">Automated fuzzy match against active lists; score ≥ 0.7 queued for review</div></div>
+        <div class="flow-step"><div class="flow-step-label">Owner</div><div class="flow-step-val">Sanctions Analyst</div></div>
+        <div class="flow-step"><div class="flow-step-label">Output</div><div class="flow-step-val">Clear / Block / EDD request + documented decision rationale</div></div>
+        <div class="flow-step"><div class="flow-step-label">SLA</div><div class="flow-step-val">Real-time block · Review: 4h · EDD: 5 days</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- KYC / CDD -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-kyc">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">KYC / CDD / EDD</div>
+    <div class="section-sub">Customer onboarding, identity verification, and enhanced due diligence workflow. Role: KYC Analyst / Relationship Manager.</div>
+
+    <div class="grid-2 mb16">
+      <div class="card must">
+        <div class="card-title">Onboarding Pipeline</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+          <div style="display:flex;align-items:center;gap:10px;padding:8px;background:var(--surface-2);border-radius:6px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--amber)"></div>
+            <div style="flex:1;font-size:12px">Document Verification Pending</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--amber)">23</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px;background:var(--surface-2);border-radius:6px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--red)"></div>
+            <div style="flex:1;font-size:12px">EDD Triggered — Awaiting Documents</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red)">7</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px;background:var(--surface-2);border-radius:6px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></div>
+            <div style="flex:1;font-size:12px">Periodic Review Due (90-day cycle)</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent)">41</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px;background:var(--surface-2);border-radius:6px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--green)"></div>
+            <div style="flex:1;font-size:12px">Approved Today</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--green)">118</div>
+          </div>
+        </div>
+      </div>
+      <div class="card must">
+        <div class="card-title">Risk Rating Distribution</div>
+        <div style="margin-top:8px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+            <div style="font-size:11px;width:60px;color:var(--text-muted)">Low</div>
+            <div class="bar-track" style="flex:1;height:16px;border-radius:4px"><div class="bar-fill" style="width:72%;background:var(--green);border-radius:4px;height:100%;display:flex;align-items:center;padding-left:8px;font-size:10px;font-family:'IBM Plex Mono',monospace">72%</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+            <div style="font-size:11px;width:60px;color:var(--text-muted)">Medium</div>
+            <div class="bar-track" style="flex:1;height:16px;border-radius:4px"><div class="bar-fill" style="width:21%;background:var(--amber);border-radius:4px;height:100%;display:flex;align-items:center;padding-left:8px;font-size:10px;font-family:'IBM Plex Mono',monospace">21%</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="font-size:11px;width:60px;color:var(--text-muted)">High</div>
+            <div class="bar-track" style="flex:1;height:16px;border-radius:4px"><div class="bar-fill" style="width:7%;background:var(--red);border-radius:4px;height:100%;display:flex;align-items:center;padding-left:8px;font-size:10px;font-family:'IBM Plex Mono',monospace">7%</div></div>
+          </div>
+        </div>
+        <div class="flow-steps" style="margin-top:16px">
+          <div class="flow-step"><div class="flow-step-label">CDD Trigger</div><div class="flow-step-val">Onboarding</div></div>
+          <div class="flow-step"><div class="flow-step-label">EDD Trigger</div><div class="flow-step-val">PEP / High-risk country / Complex ownership</div></div>
+          <div class="flow-step"><div class="flow-step-label">Output</div><div class="flow-step-val">Risk rating + review frequency</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NETWORK / GRAPH INTEL -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-network">
+    <div class="module-label ml-good">GOOD-TO-HAVE MODULE</div>
+    <div class="section-title">Network & Graph Intelligence</div>
+    <div class="section-sub">Entity relationship mapping and hidden-link detection. Role: Senior Investigator / MLRO.</div>
+    <div class="graph-container" style="min-height:320px">
+      <div class="graph-icon">⬡</div>
+      <div style="font-size:14px;color:var(--text-muted)">Entity Relationship Graph</div>
+      <div style="font-size:11px;color:var(--text-dim);text-align:center;max-width:320px">Interactive node-link graph renders here. Nodes = entities (persons, companies, accounts). Edges = relationships (ownership, transaction flows, shared attributes). Cluster = suspicious network.</div>
+      <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;justify-content:center">
+        <div class="cap-tag must">UBO Resolution</div>
+        <div class="cap-tag must">Beneficial Ownership</div>
+        <div class="cap-tag good">Graph Scoring</div>
+        <div class="cap-tag good">Cross-Entity Linking</div>
+        <div class="cap-tag future">Temporal Graphs</div>
+      </div>
+    </div>
+    <div class="card good mt16">
+      <div class="card-title">Best-Practice: Network Analysis Process</div>
+      <div class="flow-steps">
+        <div class="flow-step"><div class="flow-step-label">Trigger</div><div class="flow-step-val">Case escalation or L2 investigator request</div></div>
+        <div class="flow-step"><div class="flow-step-label">Action</div><div class="flow-step-val">Ingest entity + 3-hop network; score cluster risk</div></div>
+        <div class="flow-step"><div class="flow-step-label">Owner</div><div class="flow-step-val">Senior AML Investigator</div></div>
+        <div class="flow-step"><div class="flow-step-label">Output</div><div class="flow-step-val">Entity network map + risk narrative for SAR</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CASE MANAGEMENT -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-case">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Case Management</div>
+    <div class="section-sub">End-to-end investigation workflow. Role: AML Investigator L2 / MLRO.</div>
+
+    <div class="grid-2">
+      <div class="card must">
+        <div class="card-title">Case: CSE-2841 — Acme Corp Ltd <div class="role-tag">MLRO VIEW</div></div>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+          <span class="risk-badge risk-high">HIGH</span>
+          <span class="cap-tag must">Structuring</span>
+          <span class="cap-tag must">SAR Candidate</span>
+        </div>
+        <div class="case-timeline">
+          <div class="timeline-item">
+            <div class="tl-title">Alert ALT-7841 escalated to case</div>
+            <div class="tl-meta">2026-05-18 · 09:14 · Auto-escalation (score 92)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">KYC profile reviewed — EDD triggered</div>
+            <div class="tl-meta">2026-05-18 · 10:02 · R. Patel</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">Network analysis: 4 linked entities identified</div>
+            <div class="tl-meta">2026-05-18 · 11:30 · S. Anil</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title">SAR narrative drafted — pending MLRO approval</div>
+            <div class="tl-meta">2026-05-18 · 14:45 · R. Patel</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="btn btn-primary">Approve SAR</button>
+          <button class="btn btn-ghost">Request EDD</button>
+          <button class="btn btn-ghost">Close Case</button>
+        </div>
+      </div>
+
+      <div class="card must">
+        <div class="card-title">Active Cases by Status</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--surface-2);border-radius:6px">
+            <span style="font-size:12px">New — Unassigned</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:var(--red)">3</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--surface-2);border-radius:6px">
+            <span style="font-size:12px">In Investigation</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:var(--amber)">9</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--surface-2);border-radius:6px">
+            <span style="font-size:12px">Pending MLRO Approval</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">4</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--surface-2);border-radius:6px">
+            <span style="font-size:12px">SAR Filed — Awaiting FIU</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:var(--green)">2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SAR FILING -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-sar">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">SAR / STR Filing</div>
+    <div class="section-sub">Suspicious Activity Report drafting, review, and submission to FIU. Role: MLRO / Compliance Officer.</div>
+    <div class="grid-2 mb16">
+      <div class="card must">
+        <div class="card-title">SAR Draft — CSE-2841</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;margin-bottom:4px">SUBJECT ENTITY</div>
+            <div class="input-field" style="width:100%;background:var(--surface-2)">Acme Corp Ltd — Reg. No. IN-MH-2018-00441</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;margin-bottom:4px">REPORTING PERIOD</div>
+            <div class="input-field" style="width:100%;background:var(--surface-2)">2026-04-01 to 2026-05-18</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;margin-bottom:4px">SUSPICIOUS ACTIVITY NARRATIVE</div>
+            <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:10px;font-size:12px;color:var(--text-muted);line-height:1.6;min-height:80px">Acme Corp Ltd conducted 14 cash deposits between $9,200–$9,800 over 21 days, consistent with structured deposits to evade the $10,000 CTR threshold. Network analysis identified 4 linked shell entities receiving corresponding wire transfers within 48 hours of each deposit...</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary">Submit to FIU</button>
+            <button class="btn btn-ghost">Save Draft</button>
+            <button class="btn btn-ghost">AI Narrative Assist</button>
+          </div>
+        </div>
+      </div>
+      <div class="card must">
+        <div class="card-title">SAR Filing History</div>
+        <table>
+          <thead><tr><th>SAR ID</th><th>Subject</th><th>Filed</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SAR-0441</span></td><td>J. Vasquez</td><td>2026-05-10</td><td><span class="risk-badge risk-low">ACCEPTED</span></td></tr>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SAR-0440</span></td><td>UrbanPay Ltd</td><td>2026-05-08</td><td><span class="risk-badge risk-med">FIU REVIEW</span></td></tr>
+            <tr><td><span style="font-family:'IBM Plex Mono',monospace;color:var(--accent)">SAR-0437</span></td><td>Meridian FX</td><td>2026-04-29</td><td><span class="risk-badge risk-low">ACCEPTED</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- AGENTIC AI (FUTURE-READY) -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-agentic">
+    <div class="module-label ml-future">FUTURE-READY MODULE</div>
+    <div class="section-title">Agentic AI Operations</div>
+    <div class="section-sub">AI agents that handle L1 triage, narrative drafting, and model tuning autonomously. Role: CTO / Head of Compliance Ops.</div>
+
+    <div class="grid-3 mb16">
+      <div class="card future">
+        <div class="card-title">Alert Triage Agent <div class="module-label ml-future" style="margin-bottom:0;margin-left:8px">AI</div></div>
+        <div class="stat-number" style="color:var(--purple)">87%</div>
+        <div class="stat-sub">Auto-close rate on L1 queue. Audited. Explainable.</div>
+      </div>
+      <div class="card future">
+        <div class="card-title">SAR Narrative Agent</div>
+        <div class="stat-number" style="color:var(--purple)">3.2m</div>
+        <div class="stat-sub">Avg narrative draft time vs 4.5h manual</div>
+      </div>
+      <div class="card future">
+        <div class="card-title">Model Tuning Agent</div>
+        <div class="stat-number" style="color:var(--purple)">↓48%</div>
+        <div class="stat-sub">False positive reduction vs static rules baseline</div>
+      </div>
+    </div>
+
+    <div class="card future">
+      <div class="card-title">Agent Activity Log — Regulated AI Decisions</div>
+      <div style="font-size:12px;color:var(--text-muted);margin-bottom:12px">All agent actions are logged with input context, decision rationale, confidence score, and human override status. Regulatory requirement: full auditability.</div>
+      <table>
+        <thead><tr><th>Timestamp</th><th>Agent</th><th>Action</th><th>Confidence</th><th>Human Override</th></tr></thead>
+        <tbody>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">09:14:22</td><td>Triage-α</td><td>ALT-7818 → Auto-closed (low peer deviation)</td><td><span style="color:var(--green);font-family:'IBM Plex Mono',monospace">0.97</span></td><td><span class="risk-badge risk-low">None</span></td></tr>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">09:21:07</td><td>Narrative-β</td><td>SAR-0441 narrative drafted for CSE-2841</td><td><span style="color:var(--green);font-family:'IBM Plex Mono',monospace">0.91</span></td><td><span class="risk-badge risk-med">MLRO Review</span></td></tr>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">10:05:44</td><td>Tuning-γ</td><td>Rule R-014 threshold adjusted $50k→$45k</td><td><span style="color:var(--amber);font-family:'IBM Plex Mono',monospace">0.83</span></td><td><span class="risk-badge risk-high">Model Owner Req</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CONSORTIUM INTEL (FUTURE) -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-consortium">
+    <div class="module-label ml-future">FUTURE-READY MODULE</div>
+    <div class="section-title">Consortium Intelligence</div>
+    <div class="section-sub">Privacy-preserving cross-institution signal sharing via federated learning. Role: CTO / Regulator Liaison.</div>
+    <div class="card future mb16">
+      <div class="card-title">Network Participants</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+        <div class="cap-tag future">14 member banks</div>
+        <div class="cap-tag future">3 PSPs</div>
+        <div class="cap-tag future">FIU Read Access</div>
+        <div class="cap-tag future">Federated ML</div>
+        <div class="cap-tag future">Zero-knowledge proofs</div>
+      </div>
+      <div class="graph-container">
+        <div class="graph-icon">◎</div>
+        <div style="font-size:13px;color:var(--text-muted)">Cross-institution typology signal network</div>
+        <div style="font-size:11px;color:var(--text-dim)">Encrypted entity risk signals shared across consortium without exposing raw customer data. Your institution receives typology alerts enriched with cross-bank behavioral patterns.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- AUDIT & EXPLAINABILITY -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-audit">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Audit Trail & Explainability</div>
+    <div class="section-sub">Every decision — human or AI — is logged with full context and decision rationale. Role: MLRO / Internal Auditor / Regulator.</div>
+    <div class="card must mb16">
+      <div class="card-title">Decision Audit Log — Last 24h</div>
+      <table>
+        <thead><tr><th>Time</th><th>Object</th><th>Decision</th><th>Actor</th><th>Rationale Snapshot</th></tr></thead>
+        <tbody>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">14:45</td><td>CSE-2841</td><td><span class="risk-badge risk-high">SAR Drafted</span></td><td>R. Patel</td><td style="font-size:11px;color:var(--text-muted)">Structuring pattern confirmed, 14 deposits sub-$10k</td></tr>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">11:30</td><td>NET-441</td><td><span class="risk-badge risk-med">Network Flagged</span></td><td>S. Anil</td><td style="font-size:11px;color:var(--text-muted)">4 shell entities linked via shared address</td></tr>
+          <tr><td style="font-family:'IBM Plex Mono',monospace;font-size:11px">09:14</td><td>ALT-7818</td><td><span class="risk-badge risk-low">Auto-Closed</span></td><td>AI Agent α</td><td style="font-size:11px;color:var(--text-muted)">Peer deviation 0.3σ, no prior SARs, conf 0.97</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card must">
+      <div class="card-title">Best-Practice: Audit Process</div>
+      <div class="flow-steps">
+        <div class="flow-step"><div class="flow-step-label">Trigger</div><div class="flow-step-val">Every decision event (human or AI)</div></div>
+        <div class="flow-step"><div class="flow-step-label">Action</div><div class="flow-step-val">Immutable log: actor, inputs, model version, rationale, timestamp</div></div>
+        <div class="flow-step"><div class="flow-step-label">Owner</div><div class="flow-step-val">System (auto) + Audit Team review quarterly</div></div>
+        <div class="flow-step"><div class="flow-step-label">Output</div><div class="flow-step-val">Regulator-ready audit pack on demand</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CAPABILITY MAP -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="content" id="content-capabilities">
+    <div class="section-title">Capability Architecture Map</div>
+    <div class="section-sub">All platform capabilities classified by tier. Use for procurement gap analysis, build-vs-buy decisions, and regulator readiness.</div>
+
+    <div class="legend-bar">
+      <span class="legend-label">Tier Key:</span>
+      <div class="legend-item"><div class="legend-dot ld-must"></div>Must-Have — table stakes for any regulated entity</div>
+      <div class="legend-item"><div class="legend-dot ld-good"></div>Good-to-Have — competitive differentiators available today</div>
+      <div class="legend-item"><div class="legend-dot ld-future"></div>Future-Ready — AI-native, predictive, cross-institution</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card must">
+        <div class="card-title">◈ Must-Have Capabilities</div>
+        <div class="tag-cloud">
+          <div class="cap-tag must">Transaction Monitoring</div>
+          <div class="cap-tag must">Rules Engine</div>
+          <div class="cap-tag must">Sanctions Screening</div>
+          <div class="cap-tag must">PEP Screening</div>
+          <div class="cap-tag must">KYC / CDD</div>
+          <div class="cap-tag must">EDD Workflow</div>
+          <div class="cap-tag must">Risk Scoring</div>
+          <div class="cap-tag must">Alert Management</div>
+          <div class="cap-tag must">Case Management</div>
+          <div class="cap-tag must">SAR / STR Filing</div>
+          <div class="cap-tag must">Regulatory Reporting</div>
+          <div class="cap-tag must">Audit Trail</div>
+          <div class="cap-tag must">Real-time Screening</div>
+          <div class="cap-tag must">Watchlist Management</div>
+          <div class="cap-tag must">UBO Resolution</div>
+          <div class="cap-tag must">Document Verification</div>
+        </div>
+      </div>
+      <div class="card good">
+        <div class="card-title">⬡ Good-to-Have Capabilities</div>
+        <div class="tag-cloud">
+          <div class="cap-tag good">ML Behavioral Scoring</div>
+          <div class="cap-tag good">False Positive Reduction</div>
+          <div class="cap-tag good">Adverse Media Monitoring</div>
+          <div class="cap-tag good">Network / Graph Analysis</div>
+          <div class="cap-tag good">Entity Resolution</div>
+          <div class="cap-tag good">Typology Heatmaps</div>
+          <div class="cap-tag good">No-Code Rule Builder</div>
+          <div class="cap-tag good">Sandbox Testing</div>
+          <div class="cap-tag good">Model Governance</div>
+          <div class="cap-tag good">FRAML Convergence</div>
+          <div class="cap-tag good">Peer Group Deviation</div>
+          <div class="cap-tag good">360° Customer View</div>
+          <div class="cap-tag good">API-first Architecture</div>
+          <div class="cap-tag good">Dynamic Risk Rating</div>
+        </div>
+      </div>
+      <div class="card future">
+        <div class="card-title">◎ Future-Ready Capabilities</div>
+        <div class="tag-cloud">
+          <div class="cap-tag future">Agentic AI Triage</div>
+          <div class="cap-tag future">AI SAR Narrative</div>
+          <div class="cap-tag future">Generative AI Assist</div>
+          <div class="cap-tag future">Federated / Consortium Intel</div>
+          <div class="cap-tag future">Temporal Graph Analysis</div>
+          <div class="cap-tag future">Real-time Crypto Monitoring</div>
+          <div class="cap-tag future">Explainable AI (XAI)</div>
+          <div class="cap-tag future">Regulatory Sandbox</div>
+          <div class="cap-tag future">Digital Identity Integration</div>
+          <div class="cap-tag future">Cross-border CBDC Screening</div>
+          <div class="cap-tag future">Privacy-preserving ML</div>
+          <div class="cap-tag future">Predictive SAR Scoring</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:2px solid var(--border-light);margin-top:4px">
+      <div class="card-title">Vendor Positioning Summary</div>
+      <table>
+        <thead><tr><th>Vendor</th><th>Primary Market</th><th>Must-Have Coverage</th><th>Differentiator</th></tr></thead>
+        <tbody>
+          <tr><td style="font-weight:600">NICE Actimize</td><td>Tier 1 Banks</td><td><span class="risk-badge risk-low">FULL</span></td><td>Entity-centric AML + enterprise ML false positive reduction</td></tr>
+          <tr><td style="font-weight:600">LexisNexis Risk</td><td>Banks, Insurers, Gov</td><td><span class="risk-badge risk-low">FULL</span></td><td>Largest proprietary risk database, 35.3% market share (Burton-Taylor)</td></tr>
+          <tr><td style="font-weight:600">SymphonyAI</td><td>Banks, Fintechs</td><td><span class="risk-badge risk-low">FULL</span></td><td>Forrester Wave leader; ML-native platform with FRAML convergence</td></tr>
+          <tr><td style="font-weight:600">ComplyAdvantage</td><td>Fintechs, Digital Banks</td><td><span class="risk-badge risk-med">CORE</span></td><td>API-first; fastest integration for digital-native compliance stacks</td></tr>
+          <tr><td style="font-weight:600">Quantexa</td><td>Complex Investigations</td><td><span class="risk-badge risk-med">CORE</span></td><td>Graph-based contextual intelligence exposes hidden networks</td></tr>
+          <tr><td style="font-weight:600">Napier AI</td><td>Mid-size, Payments</td><td><span class="risk-badge risk-low">FULL</span></td><td>Cloud-native sandbox for rule testing; best UX in its tier</td></tr>
+          <tr><td style="font-weight:600">Oracle FCCM</td><td>Large Banks (Oracle shops)</td><td><span class="risk-badge risk-low">FULL</span></td><td>Embedded enterprise data governance; high-volume Oracle Cloud scale</td></tr>
+          <tr><td style="font-weight:600">WorkFusion (UiPath)</td><td>Banks — AI Automation</td><td><span class="risk-badge risk-med">CORE</span></td><td>#5 Everest Group 2026; purpose-built AI agents for L1/L2 analyst tasks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PLACEHOLDER PANELS -->
+  <div class="content" id="content-fraud">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Fraud Detection</div>
+    <div class="section-sub">Real-time fraud scoring across payment channels. FRAML convergence with AML signals. Role: Fraud Analyst / AML Analyst.</div>
+    <div class="graph-container"><div class="graph-icon">◈</div><div>Fraud channel scoring heatmap + real-time intercept queue renders here.</div><div style="font-size:11px;color:var(--text-dim)">Channels: card, wire, ACH, IMPS, UPI, SWIFT. Behavioral biometrics + device fingerprint integration.</div></div>
+  </div>
+
+  <div class="content" id="content-risk-scoring">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Risk Scoring Engine</div>
+    <div class="section-sub">Configurable scoring model across customer, product, geography, channel dimensions. Role: Quant Analyst / MLRO.</div>
+    <div class="graph-container"><div class="graph-icon">◉</div><div>Risk factor weight configuration + scoring simulation panel renders here.</div><div style="font-size:11px;color:var(--text-dim)">Factors: customer type, country risk, PEP status, transaction patterns, industry sector, channel risk.</div></div>
+  </div>
+
+  <div class="content" id="content-adverse">
+    <div class="module-label ml-good">GOOD-TO-HAVE MODULE</div>
+    <div class="section-title">Adverse Media Monitoring</div>
+    <div class="section-sub">Continuous NLP-driven news scan across 100,000+ sources in 65+ languages. Role: KYC Analyst.</div>
+    <div class="graph-container"><div class="graph-icon">◎</div><div>Adverse media feed + entity-tagged article queue renders here.</div><div style="font-size:11px;color:var(--text-dim)">AI filters: crime, fraud, corruption, sanctions, regulatory action. Deduplication + sentiment scoring.</div></div>
+  </div>
+
+  <div class="content" id="content-reporting">
+    <div class="module-label ml-must">MUST-HAVE MODULE</div>
+    <div class="section-title">Regulatory Reporting</div>
+    <div class="section-sub">Automated production of CTRs, SARs/STRs, CBUAE AMLSCU, RBI, FCA returns. Role: Compliance Officer / MLRO.</div>
+    <div class="graph-container"><div class="graph-icon">◉</div><div>Regulatory return calendar + auto-population dashboard renders here.</div><div style="font-size:11px;color:var(--text-dim)">Jurisdictions: RBI (India), CBUAE, FCA (UK), FinCEN (US), MAS (SG). Submission status tracker.</div></div>
+  </div>
+
+  <div class="content" id="content-model-gov">
+    <div class="module-label ml-good">GOOD-TO-HAVE MODULE</div>
+    <div class="section-title">Model Governance</div>
+    <div class="section-sub">Model registry, performance monitoring, drift detection, and validation workflow. Role: Model Risk Officer / CTO.</div>
+    <div class="graph-container"><div class="graph-icon">⬡</div><div>Model registry + performance drift monitor renders here.</div><div style="font-size:11px;color:var(--text-dim)">KPIs tracked: detection rate, false positive rate, coverage, Gini coefficient, PSI drift. SR 11-7 / SS1/23 compliance.</div></div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+  function show(id) {
+    document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    const panel = document.getElementById('content-' + id);
+    if (panel) panel.classList.add('active');
+    event.currentTarget.classList.add('active');
+    const titles = {
+      'dashboard': 'Command Center',
+      'txn-monitoring': 'Transaction Monitoring',
+      'sanctions': 'Sanctions & PEP Screening',
+      'fraud': 'Fraud Detection',
+      'network': 'Network & Graph Intelligence',
+      'kyc': 'KYC / CDD / EDD',
+      'risk-scoring': 'Risk Scoring Engine',
+      'adverse': 'Adverse Media Monitoring',
+      'case': 'Case Management',
+      'sar': 'SAR / STR Filing',
+      'reporting': 'Regulatory Reporting',
+      'audit': 'Audit & Explainability',
+      'model-gov': 'Model Governance',
+      'agentic': 'Agentic AI Operations',
+      'consortium': 'Consortium Intelligence',
+      'capabilities': 'Capability Architecture Map'
+    };
+    document.getElementById('page-title-text').textContent = titles[id] || id;
+  }
+</script>
+</body>
+</html>
